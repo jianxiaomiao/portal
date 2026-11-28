@@ -489,6 +489,17 @@ ul {
   border: 1px solid #cfd7c7;
   margin-top: 7px;
 }
+.portfolio-detail {
+  display: block;
+  color: #2c5141;
+  text-decoration: none;
+  text-align: center;
+}
+.online-status {
+  color: #56675c;
+  font-size: 12px;
+  margin: 12px 0 4px;
+}
 .studio-actions {
   display: grid;
 }

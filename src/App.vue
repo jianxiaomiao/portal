@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PROJECTS, SITE_PROFILE } from './config/projects'
+import { DOMESTIC_SITE_NAME, PROJECTS, SITE_PROFILE } from './config/projects'
 import { buildings, chapters, districts, href, media, spots } from './catalog'
 const props = defineProps<{ route: string; domestic?: boolean }>()
 const project = PROJECTS.find((p) => props.route === '/projects/' + p.id + '/')
@@ -44,8 +44,9 @@ const daySet = [480, 800, 1280, 1800]
     <header class="sitehead">
       <div class="shell headrow">
         <a class="signature" :href="href('/')"
-          ><i class="seal" aria-hidden="true"><i /><i /><i /><i /></i>简小淼
-          <em>Studio</em></a
+          ><i class="seal" aria-hidden="true"><i /><i /><i /><i /></i
+          >{{ domestic ? DOMESTIC_SITE_NAME : SITE_PROFILE.brand }}
+          <em v-if="!domestic">{{ SITE_PROFILE.brandEn }}</em></a
         >
         <nav aria-label="主导航">
           <a
@@ -118,25 +119,36 @@ const daySet = [480, 800, 1280, 1800]
             <a :href="SITE_PROFILE.githubProfile">GitHub ↗</a>
           </div>
           <div class="projects">
-            <a
-              v-for="p in PROJECTS"
-              :key="p.id"
-              class="project"
-              :href="href('/projects/' + p.id + '/')"
-              ><img
-                :src="pic(buildings[p.id])"
-                :alt="p.name + ' 对应的小镇建筑'"
-                loading="lazy"
-                width="900"
-                height="450"
-              />
-              <div class="titleline">
-                <h3>{{ p.name }}</h3>
-                <span>↗</span>
-              </div>
+            <article v-for="p in PROJECTS" :key="p.id" class="project">
+              <a class="project-detail" :href="href('/projects/' + p.id + '/')">
+                <img
+                  :src="pic(buildings[p.id])"
+                  :alt="p.name + ' 对应的小镇建筑'"
+                  loading="lazy"
+                  width="900"
+                  height="450"
+                />
+                <div class="titleline">
+                  <h3>{{ p.name }}</h3>
+                  <span>阅读项目详情 ↗</span>
+                </div>
+              </a>
               <p>{{ shorts[p.id] }}</p>
-              <small>{{ p.stack.slice(0, 3).join(' · ') }}</small></a
-            >
+              <small>{{ p.stack.slice(0, 3).join(' · ') }}</small>
+              <div class="actions project-actions">
+                <a
+                  v-if="p.liveUrl"
+                  class="primarylink"
+                  :href="p.liveUrl"
+                  :aria-label="'访问 ' + p.name + ' 在线系统'"
+                  >访问在线系统 ↗</a
+                >
+                <span v-else class="online-status">在线系统暂未开放</span>
+                <a class="textlink" :href="p.repoUrl" :aria-label="'查看 ' + p.name + ' GitHub'"
+                  >查看 GitHub ↗</a
+                >
+              </div>
+            </article>
           </div>
         </section>
         <section class="labband" id="ecosystem">
@@ -191,12 +203,17 @@ const daySet = [480, 800, 1280, 1800]
               <h1 class="latin">{{ project.name }}</h1>
               <h2>{{ shorts[project.id] }}</h2>
               <p>{{ project.tagline }}</p>
-              <div class="actions">
+              <div class="actions project-actions">
+                <a v-if="project.liveUrl" class="primarylink" :href="project.liveUrl"
+                  >访问在线系统 ↗</a
+                >
+                <span v-else class="online-status">在线系统暂未开放</span>
                 <a
-                  class="primarylink"
+                  :class="project.liveUrl ? 'textlink' : 'primarylink'"
                   :href="href('/explore/?place=' + buildings[project.id])"
                   >探访对应建筑 →</a
-                ><a :href="project.repoUrl">GitHub 仓库 ↗</a>
+                >
+                <a class="textlink" :href="project.repoUrl">GitHub 仓库 ↗</a>
               </div>
             </div>
             <figure>
@@ -234,11 +251,8 @@ const daySet = [480, 800, 1280, 1800]
                 >阅读「{{ chapter.title }}」 →</a
               >
               <div class="actions">
-                <a v-if="project.liveUrl" :href="project.liveUrl"
-                  >{{ project.liveLabel }} ↗</a
-                ><button hidden data-copy :data-url="project.repoUrl">
-                  复制仓库地址</button
-                ><output aria-live="polite" />
+                <button hidden data-copy :data-url="project.repoUrl">复制仓库地址</button>
+                <output aria-live="polite" />
               </div>
             </div>
           </section>

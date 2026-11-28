@@ -11,7 +11,6 @@ export const buildings = {
       '异步截图任务与 Webhook 通知',
     ],
     stack: ['Java 21', 'Spring Boot', 'MySQL', 'Vue 3'],
-    url: 'https://github.com/jianxiaomiao/Nexus',
   },
   FO: {
     name: 'FlowOps',
@@ -25,7 +24,6 @@ export const buildings = {
       '知识库与 SLA 扫描',
     ],
     stack: ['Spring Boot', 'RabbitMQ', 'Redis', 'Vue 3'],
-    url: 'https://github.com/jianxiaomiao/flowOps',
   },
   NC: {
     name: 'NewCrisp',
@@ -39,7 +37,6 @@ export const buildings = {
       '客服分组、转派与满意度评价',
     ],
     stack: ['Spring Boot', 'WebSocket', 'MySQL', 'TypeScript'],
-    url: 'https://github.com/jianxiaomiao/newCrisp',
   },
   ST: {
     name: 'Portal',

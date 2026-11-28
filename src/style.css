@@ -313,6 +313,22 @@ body {
   .titleline {
     margin: 13px 0 4px;
   }
+  .project-detail .titleline span {
+    font-size: 12px;
+    color: #395e49;
+    text-align: right;
+  }
+  .project-detail:hover .titleline span {
+    text-decoration: underline;
+  }
+  .project-actions {
+    gap: 8px 14px;
+    margin-top: 12px;
+  }
+  .project-actions .online-status {
+    color: #526459;
+    font-size: 13px;
+  }
   .project small {
     display: block;
     margin: 12px 0 0;
