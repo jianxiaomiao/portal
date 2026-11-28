@@ -25,7 +25,8 @@ import { scenarios, shots, type Scenario } from './journey/story'
 import ApiRequestPanel from './api-request/ApiRequestPanel.vue'
 import { outcomes, type Outcome } from './api-request/story'
 import type { ApiRequest } from './api-request/director'
-import { media, href } from '../catalog'
+import { buildings as softwareBuildings, media, href } from '../catalog'
+import { PROJECTS } from '../config/projects'
 import {
   persistTheme,
   readCamera,
@@ -122,6 +123,9 @@ const project = computed(() =>
   selected.value && selected.value !== 'hub'
     ? buildings[selected.value]
     : undefined,
+)
+const software = computed(() =>
+  PROJECTS.find(({ id }) => softwareBuildings[id] === selected.value),
 )
 const label = (id: Place) =>
   id === 'hub' ? '中央双环' : buildings[id].name + ' ' + buildings[id].type
@@ -878,24 +882,15 @@ onBeforeUnmount(() => {
                 <i :style="{ background: project.color }"></i>{{ project.type }}
               </div>
               <p class="description">{{ project.description }}</p>
+              <a v-if="software?.liveUrl" class="primary" :href="software.liveUrl"
+                >访问 {{ software.name }} ↗</a
+              >
+              <p v-else-if="software" class="online-status">在线系统暂未开放</p>
               <a
-                v-if="selected && selected !== 'hub'"
-                class="portfolio-detail"
-                :href="
-                  href(
-                    selected === 'ST'
-                      ? '/studio/'
-                      : '/projects/' +
-                          { NX: 'nexus', FO: 'flowops', NC: 'newcrisp' }[
-                            selected
-                          ] +
-                          '/',
-                  )
-                "
-                >{{
-                  selected === 'ST' ? '阅读工作室资料' : '阅读项目详情'
-                }}
-                →</a
+                v-if="software || selected === 'ST'"
+                class="portfolio-detail secondary"
+                :href="href(software ? '/projects/' + software.id + '/' : '/studio/')"
+                >{{ software ? '阅读项目详情' : '阅读工作室资料' }} →</a
               >
               <button
                 v-if="ready && selected === 'FO'"
@@ -904,7 +899,7 @@ onBeforeUnmount(() => {
               >
                 {{ status.view === 'conveyor' ? '建筑全貌' : '观察传送带' }}
               </button>
-              <template v-if="selected !== 'ST'"
+              <template v-if="software"
                 ><h3>核心功能</h3>
                 <ul>
                   <li v-for="item in project.features" :key="item">
@@ -916,17 +911,17 @@ onBeforeUnmount(() => {
                   <span v-for="s in project.stack" :key="s">{{ s }}</span>
                 </div>
                 <a
-                  class="primary"
-                  :href="project.url"
+                  class="portfolio-detail secondary"
+                  :href="software.repoUrl"
                   target="_blank"
                   rel="noopener"
-                  >查看 GitHub <Icon name="out" /></a
+                  >查看 GitHub ↗</a
               ></template>
               <template v-else>
                 <a
                   v-if="!ready"
                   class="primary"
-                  :href="project.url"
+                  :href="buildings.ST.url"
                   target="_blank"
                   rel="noopener"
                   >查看 GitHub ↗</a

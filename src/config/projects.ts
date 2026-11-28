@@ -5,7 +5,6 @@ export interface ProjectItem {
   tagline: string;
   /** 填写真实线上地址（如 https://nexus.yourdomain.com）后，入口按钮会自动变为可跳转链接；留空则显示占位状态 */
   liveUrl: string;
-  liveLabel: string;
   repoUrl: string;
   highlights: string[];
   stack: string[];
@@ -46,8 +45,7 @@ export const PROJECTS: ProjectItem[] = [
     subtitle: 'Developer API Platform',
     tagline:
       '模块化单体开发者 API 平台，统一管理用户会话、Application、API Key、配额限速、用量统计、异步截图任务与 Webhook，覆盖 Web、Electron 桌面端与 Android 移动端。',
-    liveUrl: '', // 上线后替换为例如 'https://nexus.yourdomain.com'
-    liveLabel: '进入 Nexus 控制台',
+    liveUrl: '', // 上线验收通过后填入 'https://nexus.myxiaomiao.com/'
     repoUrl: 'https://github.com/jianxiaomiao/Nexus',
     highlights: [
       'JWT + Refresh 令牌轮换与多标签页协调，管理与机器调用双身份边界',
@@ -64,8 +62,7 @@ export const PROJECTS: ProjectItem[] = [
     subtitle: '企业多租户工单与知识协作平台',
     tagline:
       '面向企业内部协作的多租户工单闭环与知识库系统，融合 SLA 原子超时扫描、Transactional Outbox 异步通知，以及基于 Spring AI + Milvus 的租户隔离相似知识推荐。',
-    liveUrl: '', // 上线后替换为例如 'https://flowops.yourdomain.com'
-    liveLabel: '进入 FlowOps 平台',
+    liveUrl: '', // 上线验收通过后填入 'https://flowops.myxiaomiao.com/'
     repoUrl: 'https://github.com/jianxiaomiao/flowOps',
     highlights: [
       '工单创建、部门分派、处理、方案确认/驳回与完整审计追踪闭环',
@@ -82,8 +79,7 @@ export const PROJECTS: ProjectItem[] = [
     subtitle: '轻量级多租户 Web 在线客服服务台',
     tagline:
       '对标 Crisp 核心人工客服体验打造的多租户服务台。一行 script 代码即可为任意官网挂载 Shadow DOM 悬浮窗，内置 SaaS 自助注册、平台超管台、内部协作与数据看板。',
-    liveUrl: '', // 上线后替换为例如 'https://crisp.yourdomain.com'
-    liveLabel: '进入 NewCrisp 服务台',
+    liveUrl: '', // 上线验收通过后填入 'https://chat.myxiaomiao.com/'
     repoUrl: 'https://github.com/jianxiaomiao/newCrisp',
     highlights: [
       'Shadow DOM 一行代码悬浮窗 + 紧凑双界面布局，支持访客接续码合并',
