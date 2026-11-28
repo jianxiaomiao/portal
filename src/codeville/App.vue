@@ -13,6 +13,7 @@ import {
 } from './content'
 import { districtNames, type TownView } from './scene/townViews'
 import Icon from './Icon.vue'
+import MapCompass from './MapCompass.vue'
 import SupportChatPanel from './support-chat/SupportChatPanel.vue'
 import {
   scenarios as chatScenarios,
@@ -415,6 +416,8 @@ async function boot() {
     if (__CV_INSPECT__ && new URLSearchParams(location.search).has('inspect'))
       (window as any).__cv = {
         snapshot: () => town?.diagnostics(),
+        owner: () => town,
+        rig: () => town?.rig,
         project: (id: string) => town?.project(id),
         hit: (x: number, y: number) => town?.hit(x, y),
         motion: () => town?.motion,
@@ -704,24 +707,7 @@ onBeforeUnmount(() => {
                 }}</strong>
               </template>
             </div>
-            <div class="compass" title="地图北向">
-              <span>N</span>
-              <div
-                :style="{
-                  transform:
-                    'rotate(' +
-                    (-Math.atan2(
-                      (status.camera?.[0] ?? 0) - (status.target?.[0] ?? 0),
-                      (status.camera?.[2] ?? 1) - (status.target?.[2] ?? 0),
-                    ) *
-                      180) /
-                      Math.PI +
-                    'deg)',
-                }"
-              >
-                ↑
-              </div>
-            </div>
+            <MapCompass v-if="!compact && town?.rig" :key="epoch" :controls="town.rig.controls" />
             <div v-if="!selected" class="map-angles" aria-label="总览角度">
               <button
                 @click="observe('plan')"

@@ -4,6 +4,7 @@ type Timing = {
   downloadMs: number
   parseMs: number
   readyMs: number
+  cloudInitMs: number
   firstRenderMs: number
   transferBytes: number
   encodedBytes: number
@@ -14,6 +15,7 @@ export class Stats {
     downloadMs: 0,
     parseMs: 0,
     readyMs: 0,
+    cloudInitMs: 0,
     firstRenderMs: 0,
     transferBytes: 0,
     encodedBytes: 0,

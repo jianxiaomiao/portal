@@ -4,7 +4,7 @@ import App from './App.vue'
 import { pageTitles } from './catalog'
 export const routes = Object.keys(pageTitles)
 export async function render(route: string, template: string) {
-  const html = await renderToString(createSSRApp(App, { route }))
+  const html = await renderToString(createSSRApp(App, { route, domestic: __PORTAL_DOMESTIC__ }))
   return template
     .replace('PORTAL_PAGE_TITLE', pageTitles[route])
     .replace('<!--portal-content-->', () => html)

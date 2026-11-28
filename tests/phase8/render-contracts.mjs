@@ -16,6 +16,11 @@ try {
       root.traverse(o=>{
         if(o.isMesh && o.material?.name==='Garden • painted enamel and foliage') streets.push(o)
       })
+      const water=root.getObjectByName('Quay.Water'), bed=root.getObjectByName('Quay.Riverbed')
+      const waterway={ surfaceVertices:water?.geometry.getAttribute('position').count,
+        transparent:water?.material.transparent, depthWrite:water?.material.depthWrite,
+        opaqueBank:water?.parent.material.transparent===false,
+        bedBelow:bed?.position.y<water?.position.y, gravel:!!root.getObjectByName('Quay.SubmergedGravel') }
       const tower=cv.inspectObject('NC.Anchor.Tower')
       const wave=tower.children.find(o=>o.geometry?.type==='RingGeometry')
       if(!wave) throw Error('通信塔波纹缺失')
@@ -29,11 +34,12 @@ try {
         armAngles.push(arm.quaternion.z)
         await new Promise(r=>setTimeout(r,75))
       }
-      return {ids:cv.snapshot().ids, streetDrawables:streets.length,
+      return {waterway,ids:cv.snapshot().ids, streetDrawables:streets.length,
         staticOnly:streets.every(o=>o.layers.mask===4), bakes:cv.snapshot().streetShadowBakes,
         waveOpacity:[low,high], visible,hidden,elbowZ:[Math.min(...armAngles),Math.max(...armAngles)],
         network:performance.getEntriesByType('resource').filter(r=>r.name.endsWith('.glb')).map(r=>({file:new URL(r.name).pathname,body:r.encodedBodySize,transfer:r.transferSize}))}
     })
+    assert.deepEqual(scene.waterway,{surfaceVertices:12,transparent:true,depthWrite:false,opaqueBank:true,bedBelow:true,gravel:true})
     assert.equal(scene.ids,196)
     assert.ok(scene.streetDrawables>0 && scene.staticOnly)
     assert.equal(scene.bakes,1)
