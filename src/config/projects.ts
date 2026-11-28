@@ -11,6 +11,8 @@ export interface ProjectItem {
   accent: 'forest' | 'amber' | 'teal';
 }
 
+export const DOMESTIC_SITE_NAME = '个人学习记录'
+
 export const SITE_PROFILE = {
   brand: '简小淼',
   brandEn: 'Studio',

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PROJECTS, SITE_PROFILE } from './config/projects'
+import { DOMESTIC_SITE_NAME, PROJECTS, SITE_PROFILE } from './config/projects'
 import { buildings, chapters, districts, href, media, spots } from './catalog'
 const props = defineProps<{ route: string; domestic?: boolean }>()
 const project = PROJECTS.find((p) => props.route === '/projects/' + p.id + '/')
@@ -44,8 +44,9 @@ const daySet = [480, 800, 1280, 1800]
     <header class="sitehead">
       <div class="shell headrow">
         <a class="signature" :href="href('/')"
-          ><i class="seal" aria-hidden="true"><i /><i /><i /><i /></i>简小淼
-          <em>Studio</em></a
+          ><i class="seal" aria-hidden="true"><i /><i /><i /><i /></i
+          >{{ domestic ? DOMESTIC_SITE_NAME : SITE_PROFILE.brand }}
+          <em v-if="!domestic">{{ SITE_PROFILE.brandEn }}</em></a
         >
         <nav aria-label="主导航">
           <a
