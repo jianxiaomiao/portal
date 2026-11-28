@@ -1,12 +1,8 @@
-export type DeploymentStatus = 'live' | 'deployed-pending-url' | 'deploying';
-
 export interface ProjectItem {
   id: 'nexus' | 'flowops' | 'newcrisp';
   name: string;
   subtitle: string;
   tagline: string;
-  status: DeploymentStatus;
-  statusText: string;
   /** 填写真实线上地址（如 https://nexus.yourdomain.com）后，入口按钮会自动变为可跳转链接；留空则显示占位状态 */
   liveUrl: string;
   liveLabel: string;
@@ -19,16 +15,10 @@ export interface ProjectItem {
 export const SITE_PROFILE = {
   brand: '简小淼',
   brandEn: 'Studio',
-  roleBadge: '全栈工程师 · 系统架构与开源实践',
-  headline: '用克制的工程架构，打磨真实可用的全栈系统',
-  intro:
-    '专注后端架构、实时通信、多租户安全边界与现代 Web 体验。下面汇集了我持续演进的三套核心工程项目，从开发者 API 平台、企业工单知识协作到实时在线客服服务台，每套系统都坚持真实数据库与端到端自动化验证。',
+  roleBadge: '软件工程专业学生',
+  headline: '用代码建造一个小世界。',
+  intro: '你好，我是简小淼，一名软件工程专业学生。我喜欢通过实际项目探索后端开发、软件架构与系统设计，也对三维建模和交互式可视化感兴趣。这里记录了我的软件作品、工程实验和学习过程。',
   githubProfile: 'https://github.com/jianxiaomiao',
-  metrics: [
-    { value: '3', label: '套独立全栈系统' },
-    { value: '4 端', label: 'Web · 悬浮窗 · 桌面 · 移动' },
-    { value: 'E2E + CI', label: '真实 MySQL 与浏览器验收' },
-  ],
   coreStack: [
     'Java 21',
     'Spring Boot 3 / 4',
@@ -56,8 +46,6 @@ export const PROJECTS: ProjectItem[] = [
     subtitle: 'Developer API Platform',
     tagline:
       '模块化单体开发者 API 平台，统一管理用户会话、Application、API Key、配额限速、用量统计、异步截图任务与 Webhook，覆盖 Web、Electron 桌面端与 Android 移动端。',
-    status: 'deployed-pending-url',
-    statusText: 'ECS 已部署 · 域名待填入',
     liveUrl: '', // 上线后替换为例如 'https://nexus.yourdomain.com'
     liveLabel: '进入 Nexus 控制台',
     repoUrl: 'https://github.com/jianxiaomiao/Nexus',
@@ -76,8 +64,6 @@ export const PROJECTS: ProjectItem[] = [
     subtitle: '企业多租户工单与知识协作平台',
     tagline:
       '面向企业内部协作的多租户工单闭环与知识库系统，融合 SLA 原子超时扫描、Transactional Outbox 异步通知，以及基于 Spring AI + Milvus 的租户隔离相似知识推荐。',
-    status: 'deploying',
-    statusText: 'ECS 部署筹备中',
     liveUrl: '', // 上线后替换为例如 'https://flowops.yourdomain.com'
     liveLabel: '进入 FlowOps 平台',
     repoUrl: 'https://github.com/jianxiaomiao/flowOps',
@@ -96,8 +82,6 @@ export const PROJECTS: ProjectItem[] = [
     subtitle: '轻量级多租户 Web 在线客服服务台',
     tagline:
       '对标 Crisp 核心人工客服体验打造的多租户服务台。一行 script 代码即可为任意官网挂载 Shadow DOM 悬浮窗，内置 SaaS 自助注册、平台超管台、内部协作与数据看板。',
-    status: 'deploying',
-    statusText: 'ECS 部署筹备中',
     liveUrl: '', // 上线后替换为例如 'https://crisp.yourdomain.com'
     liveLabel: '进入 NewCrisp 服务台',
     repoUrl: 'https://github.com/jianxiaomiao/newCrisp',

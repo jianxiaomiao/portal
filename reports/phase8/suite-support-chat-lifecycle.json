@@ -1,0 +1,11 @@
+{
+  "base": "/explore/",
+  "node": "v24.22.3",
+  "results": [
+    {
+      "name": "support-chat-lifecycle",
+      "exitCode": 0,
+      "seconds": 82.09
+    }
+  ]
+}

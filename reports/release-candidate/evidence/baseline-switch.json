@@ -1,0 +1,20 @@
+[
+  {
+    "active": "main",
+    "verifiedFiles": 3,
+    "treeDigest": "4d0e7d5de50b88d96a56279f211c636bbf529ca22ddd7abddc1af02d19cecefa",
+    "exploreStatus": 404
+  },
+  {
+    "active": "RC",
+    "verifiedFiles": 44,
+    "treeDigest": "f0140a0984f6d6a7745f576c833f56bc5288e6a8b2592445b902bcaf6dce8ef3",
+    "exploreStatus": 200
+  },
+  {
+    "active": "rollback-main",
+    "verifiedFiles": 3,
+    "treeDigest": "4d0e7d5de50b88d96a56279f211c636bbf529ca22ddd7abddc1af02d19cecefa",
+    "exploreStatus": 404
+  }
+]

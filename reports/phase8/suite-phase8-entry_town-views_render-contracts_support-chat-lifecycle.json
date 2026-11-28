@@ -1,0 +1,26 @@
+{
+  "base": "/explore/",
+  "node": "v24.22.3",
+  "results": [
+    {
+      "name": "phase8-entry",
+      "exitCode": 0,
+      "seconds": 14.428
+    },
+    {
+      "name": "town-views",
+      "exitCode": 0,
+      "seconds": 39.173
+    },
+    {
+      "name": "render-contracts",
+      "exitCode": 0,
+      "seconds": 32.038
+    },
+    {
+      "name": "support-chat-lifecycle",
+      "exitCode": 1,
+      "seconds": 72.125
+    }
+  ]
+}

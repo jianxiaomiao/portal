@@ -1,0 +1,12 @@
+{
+  "unknownLength": {
+    "bytes": "0.3 MiB",
+    "hasFraction": false
+  },
+  "cancelledDecode": {
+    "waiting": 2,
+    "closed": 2,
+    "canvases": 0,
+    "hasLateOwner": false
+  }
+}

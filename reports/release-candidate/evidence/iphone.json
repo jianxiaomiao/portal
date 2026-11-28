@@ -1,0 +1,146 @@
+{
+  "usb": {
+    "ProductType": "iPhone13,1",
+    "ProductVersion": "27.2",
+    "DeviceClass": "iPhone"
+  },
+  "transport": "private LAN HTTPS; browser secure context; no-store",
+  "automatic": {
+    "secure": true,
+    "crypto": true,
+    "rows": {
+      "home": {
+        "ok": true,
+        "value": "简小淼 · 软件作品与 Codeville 小镇"
+      },
+      "details": {
+        "ok": true,
+        "value": [
+          "Nexus · Developer API Platform",
+          "FlowOps · 企业多租户工单与知识协作平台",
+          "NewCrisp · 轻量级多租户 Web 在线客服服务台"
+        ]
+      },
+      "meshopt": {
+        "ok": true,
+        "value": {
+          "elapsed": 12644,
+          "models": [
+            "/town-6c2fa5d037a0/Town.meshopt.glb"
+          ],
+          "viewport": [
+            359,
+            528
+          ]
+        }
+      },
+      "raw": {
+        "ok": true,
+        "value": {
+          "elapsed": 20264,
+          "models": [
+            "/town-6c2fa5d037a0/Town.glb"
+          ],
+          "viewport": [
+            359,
+            528
+          ]
+        }
+      },
+      "controls": {
+        "ok": true,
+        "value": [
+          "none",
+          "auto",
+          "none"
+        ]
+      },
+      "quality-theme": {
+        "ok": false,
+        "error": "TypeError: function is not a constructor (evaluating 'new w()')"
+      },
+      "sustained": {
+        "ok": true,
+        "value": {
+          "seconds": 30,
+          "frames": 1801,
+          "p50ms": 17,
+          "p95ms": 17,
+          "losses": 0
+        }
+      },
+      "studio": {
+        "ok": true,
+        "value": "Frostwick"
+      },
+      "api": {
+        "ok": true,
+        "value": "已进入并推进"
+      },
+      "ticket": {
+        "ok": true,
+        "value": "已进入并推进"
+      },
+      "chat": {
+        "ok": true,
+        "value": "已进入并推进"
+      },
+      "failed-models": {
+        "ok": true,
+        "value": [
+          "/town-6c2fa5d037a0/Town.meshopt.glb",
+          "/town-6c2fa5d037a0/Town.glb"
+        ]
+      }
+    },
+    "complete": true
+  },
+  "manualFollowup": {
+    "kind": "manual",
+    "secure": true,
+    "orientation": [
+      "portrait",
+      "landscape",
+      "portrait"
+    ],
+    "visibility": [
+      "hidden",
+      "visible",
+      "hidden",
+      "visible",
+      "hidden",
+      "visible",
+      "hidden",
+      "hidden",
+      "visible",
+      "hidden",
+      "visible"
+    ],
+    "rows": {
+      "failure": {
+        "ok": true,
+        "models": [
+          "/town-6c2fa5d037a0/Town.meshopt.glb",
+          "/town-6c2fa5d037a0/Town.glb"
+        ]
+      },
+      "qualityTheme": {
+        "quality": "low",
+        "themes": [
+          "night",
+          "day"
+        ]
+      },
+      "performance": "帧率\n60 FPS\n绘制调用\n309\n提交三角面\n276,503\n渲染器纹理\n3\n实时阴影\n关闭\n像素比\n1\n首次可交互\n10095 ms"
+    },
+    "touch": {
+      "one": 503,
+      "two": 160
+    },
+    "back": true,
+    "restoredScene": true,
+    "awaitingBack": false,
+    "operatorConfirmation": "两种都看到了（单指旋转、双指缩放）"
+  },
+  "browser": "Safari 27.2"
+}

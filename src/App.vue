@@ -1,272 +1,433 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from 'vue';
-import { NEWCRISP_WIDGET, PROJECTS, SITE_PROFILE, type ProjectItem } from './config/projects';
-
-const toastMessage = ref('');
-let toastTimer: number | undefined;
-let widgetScript: HTMLScriptElement | null = null;
-
-function showToast(message: string) {
-  toastMessage.value = message;
-  window.clearTimeout(toastTimer);
-  toastTimer = window.setTimeout(() => {
-    toastMessage.value = '';
-  }, 3200);
+import { PROJECTS, SITE_PROFILE } from './config/projects'
+import { buildings, chapters, districts, href, media, spots } from './catalog'
+const props = defineProps<{ route: string }>()
+const project = PROJECTS.find((p) => props.route === '/projects/' + p.id + '/')
+const chapter = chapters.find((c) => c.project === project?.name)
+const nav = [
+  ['/#projects', '软件作品'],
+  ['/explore/', '探索小镇'],
+  ['/systems/', '系统实验室'],
+  ['/studio/', '工作室'],
+  ['/#about', '关于'],
+]
+const shorts = {
+  nexus: '开发者 API 平台',
+  flowops: '多租户工单与知识协作',
+  newcrisp: '实时在线客服服务台',
 }
-
-function handlePendingEntry(project: ProjectItem) {
-  if (project.status === 'deployed-pending-url') {
-    showToast(`${project.name} 已部署到 ECS，在 src/config/projects.ts 填入线上域名即可直接跳转。`);
-  } else {
-    showToast(`${project.name} 正在筹备 ECS 部署，可先访问 GitHub 仓库查看源码与运行指南。`);
-  }
-}
-
-async function copyRepoUrl(project: ProjectItem) {
-  try {
-    await navigator.clipboard.writeText(project.repoUrl);
-    showToast(`已复制 ${project.name} 仓库地址`);
-  } catch {
-    showToast(project.repoUrl);
-  }
-}
-
-function repoShortName(url: string) {
-  return url.replace(/^https?:\/\/github\.com\//, '');
-}
-
-onMounted(() => {
-  if (NEWCRISP_WIDGET.enabled && NEWCRISP_WIDGET.origin && NEWCRISP_WIDGET.siteId) {
-    const script = document.createElement('script');
-    script.src = `${NEWCRISP_WIDGET.origin.replace(/\/$/, '')}/widget.js`;
-    script.async = true;
-    script.dataset.siteId = NEWCRISP_WIDGET.siteId;
-    document.body.appendChild(script);
-    widgetScript = script;
-  }
-});
-
-onUnmounted(() => {
-  window.clearTimeout(toastTimer);
-  widgetScript?.remove();
-  document.getElementById('newcrisp-widget-root')?.remove();
-});
+const rooms = [
+  {
+    path: '/studio/',
+    name: 'Studio',
+    title: '个人工作室',
+    image: 'inside',
+    text: '沿工作台、书架和设计白板，查看项目用到的技术与学习主题。',
+  },
+  {
+    path: '/creative/',
+    name: 'Creative Lab',
+    title: '创意收藏',
+    image: 'collection',
+    text: 'Frostwick 霜镇夜邮局，从独立雪景球到工作室里的收藏。',
+  },
+]
+const pic = (name: string) => media(name + '.webp')
+const daySet = [480, 800, 1280, 1800]
+  .map((w) => media('day-' + w + '.webp') + ' ' + w + 'w')
+  .join(', ')
 </script>
 
 <template>
-  <header class="top-nav">
-    <div class="container top-nav-inner">
-      <a href="#top" class="brand-mark">
-        <span class="brand-seal" aria-hidden="true">简</span>
-        <span class="brand-text">
-          <strong>{{ SITE_PROFILE.brand }}</strong>
-          <span>{{ SITE_PROFILE.brandEn }}</span>
-        </span>
-      </a>
-
-      <nav class="nav-links" aria-label="页面导航">
-        <a href="#projects">项目作品</a>
-        <a href="#ecosystem">系统协同</a>
-        <a href="#stack">工程底座</a>
-      </nav>
-
-      <a class="btn" :href="SITE_PROFILE.githubProfile" target="_blank" rel="noopener noreferrer">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.06 11.06 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.66.79.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
-        </svg>
-        <span>GitHub 主页</span>
-      </a>
-    </div>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-layout">
-        <div>
-          <span class="hero-badge">
-            <span class="pulse-dot" aria-hidden="true"></span>
-            {{ SITE_PROFILE.roleBadge }}
-          </span>
-          <h1>{{ SITE_PROFILE.headline }}</h1>
-          <p class="hero-intro">{{ SITE_PROFILE.intro }}</p>
-          <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">浏览核心项目</a>
-            <a :href="SITE_PROFILE.githubProfile" target="_blank" rel="noopener noreferrer" class="btn">
-              查看全部开源仓库 ↗
-            </a>
-          </div>
-        </div>
-
-        <aside class="surface hero-metrics" aria-label="工程概览">
-          <div v-for="item in SITE_PROFILE.metrics" :key="item.label" class="metric-row">
-            <strong>{{ item.value }}</strong>
-            <span>{{ item.label }}</span>
-          </div>
-        </aside>
+  <div class="portfolio" id="top" :data-route="route">
+    <a class="skip" href="#content">跳到正文</a>
+    <header class="sitehead">
+      <div class="shell headrow">
+        <a class="signature" :href="href('/')"
+          ><i class="seal" aria-hidden="true"><i /><i /><i /><i /></i>简小淼
+          <em>Studio</em></a
+        >
+        <nav aria-label="主导航">
+          <a
+            v-for="[url, label] in nav"
+            :key="url"
+            :href="href(url)"
+            :aria-current="url === route ? 'page' : undefined"
+            >{{ label }}</a
+          >
+        </nav>
+        <details class="menu">
+          <summary>目录 ☰</summary>
+          <nav aria-label="移动导航">
+            <a v-for="[url, label] in nav" :key="url" :href="href(url)">{{
+              label
+            }}</a>
+          </nav>
+        </details>
       </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="section-kicker">Featured Systems</p>
-            <h2>核心项目入口</h2>
+    </header>
+    <main id="content">
+      <template v-if="route === '/'">
+        <section class="hero shell">
+          <div class="welcome">
+            <p class="ey">Welcome to my world</p>
+            <h1>你好，<br />我是<span>简小淼。</span></h1>
+            <h2>用代码建造一个小世界。</h2>
+            <p class="intro">
+              我是一名软件工程专业学生，喜欢通过实际项目探索后端开发与系统设计，也喜欢三维建模和交互式可视化。
+            </p>
+            <div class="actions">
+              <a class="primarylink" :href="href('/explore/')"
+                >探索小镇 <b>→</b></a
+              ><a class="textlink" href="#projects">浏览软件作品 ↓</a>
+            </div>
           </div>
-          <p>三套独立代码库，均含完整前后端、数据库迁移与自动化验收</p>
+          <figure class="world">
+            <div class="world-frame" data-runtime-slot>
+              <picture
+                ><source
+                  type="image/webp"
+                  :srcset="daySet"
+                  sizes="(max-width: 740px) 96vw, 61vw" />
+                <img
+                  :src="media('day.jpg')"
+                  width="1800"
+                  height="1238"
+                  fetchpriority="high"
+                  alt="Codeville 全景，滨水公园、住宅街与街市环绕四栋核心建筑"
+              /></picture>
+            </div>
+            <figcaption>
+              <div><em>Codeville</em><small>微缩开发者小镇</small></div>
+              <button class="enable" data-enable hidden>启用三维预览 ↗</button>
+            </figcaption>
+          </figure>
+        </section>
+        <div class="counts">
+          <div class="shell">
+            <span><b>3</b> 个软件项目</span><span><b>3</b> 条系统演示</span
+            ><span><b>1</b> 座微缩小镇</span>
+          </div>
         </div>
-
-        <div class="projects-grid">
-          <article v-for="project in PROJECTS" :key="project.id" class="surface project-card">
-            <div class="project-top">
-              <div :class="['project-icon', project.accent]" aria-hidden="true">
-                <!-- Nexus icon -->
-                <svg v-if="project.id === 'nexus'" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="3" y="3" width="7" height="7" rx="1.5" />
-                  <rect x="14" y="3" width="7" height="7" rx="1.5" />
-                  <rect x="14" y="14" width="7" height="7" rx="1.5" />
-                  <rect x="3" y="14" width="7" height="7" rx="1.5" />
-                </svg>
-                <!-- FlowOps icon -->
-                <svg v-else-if="project.id === 'flowops'" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="6" cy="6" r="2.5" />
-                  <circle cx="18" cy="6" r="2.5" />
-                  <circle cx="12" cy="18" r="2.5" />
-                  <path d="M8.5 6h7M7.2 8.2l3.6 7.6M16.8 8.2l-3.6 7.6" />
-                </svg>
-                <!-- NewCrisp icon -->
-                <svg v-else width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 12a8.5 8.5 0 0 1-12.4 7.5L4 21l1.5-4.4A8.5 8.5 0 1 1 21 12Z" />
-                  <path d="M8.5 11.5h7M8.5 14.5h4.5" />
-                </svg>
+        <section class="shell block" id="projects">
+          <div class="sectionhead">
+            <div>
+              <p class="ey">Selected software</p>
+              <h2>软件作品</h2>
+            </div>
+            <a :href="SITE_PROFILE.githubProfile">GitHub ↗</a>
+          </div>
+          <div class="projects">
+            <a
+              v-for="p in PROJECTS"
+              :key="p.id"
+              class="project"
+              :href="href('/projects/' + p.id + '/')"
+              ><img
+                :src="pic(buildings[p.id])"
+                :alt="p.name + ' 对应的小镇建筑'"
+                loading="lazy"
+                width="900"
+                height="450"
+              />
+              <div class="titleline">
+                <h3>{{ p.name }}</h3>
+                <span>↗</span>
               </div>
-
-              <span :class="['status-pill', project.liveUrl ? 'live' : project.status]">
-                <i></i>
-                {{ project.liveUrl ? '在线运行' : project.statusText }}
-              </span>
+              <p>{{ shorts[p.id] }}</p>
+              <small>{{ p.stack.slice(0, 3).join(' · ') }}</small></a
+            >
+          </div>
+        </section>
+        <section class="labband" id="ecosystem">
+          <div class="shell labgrid">
+            <div>
+              <p class="ey">Systems Lab</p>
+              <h2>系统实验室</h2>
+              <p>从一个请求、一张工单和一条消息，走进软件的运行过程。</p>
+              <a class="textlink" :href="href('/systems/')">查看章节导读 →</a>
             </div>
-
-            <div class="project-title-group">
-              <h3>{{ project.name }}</h3>
-              <span class="project-subtitle">{{ project.subtitle }}</span>
-            </div>
-
-            <p class="project-tagline">{{ project.tagline }}</p>
-
-            <ul class="project-highlights">
-              <li v-for="point in project.highlights" :key="point">
-                <svg class="check-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                <span>{{ point }}</span>
-              </li>
-            </ul>
-
-            <div class="stack-tags">
-              <span v-for="tech in project.stack" :key="tech" class="stack-tag">{{ tech }}</span>
-            </div>
-
-            <div class="project-actions">
+            <div class="chapterlist">
               <a
-                v-if="project.liveUrl"
-                class="btn btn-primary"
-                :href="project.liveUrl"
-                target="_blank"
-                rel="noopener noreferrer"
+                v-for="(c, i) in chapters"
+                :key="c.id"
+                :href="href('/systems/#' + c.id)"
+                ><small>CH. 0{{ i + 1 }}</small
+                ><b>{{ c.title }}</b
+                ><span>↗</span></a
               >
-                {{ project.liveLabel }} ↗
-              </a>
-              <button
-                v-else
-                type="button"
-                class="btn btn-pending"
-                @click="handlePendingEntry(project)"
-              >
-                {{ project.status === 'deployed-pending-url' ? '在线入口（待填域名）' : '在线入口（部署筹备中）' }}
-              </button>
-
-              <a
-                class="btn btn-icon"
-                :href="project.repoUrl"
-                target="_blank"
-                rel="noopener noreferrer"
-                :title="`打开 ${project.name} GitHub 仓库`"
-                :aria-label="`打开 ${project.name} GitHub 仓库`"
-              >
-                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.06 11.06 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.66.79.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
-                </svg>
-              </a>
-            </div>
-
-            <div class="project-repo-row">
-              <a class="repo-link" :href="project.repoUrl" target="_blank" rel="noopener noreferrer">
-                <span>github.com/{{ repoShortName(project.repoUrl) }}</span>
-              </a>
-              <button type="button" class="copy-mini" @click="copyRepoUrl(project)">复制</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="ecosystem" class="section">
-      <div class="container">
-        <div class="surface ecosystem-card">
-          <p class="section-kicker">Architecture Synergy</p>
-          <h2>三套系统的协同关系</h2>
-          <p style="margin-top: 6px; color: var(--muted); font-size: 0.94rem;">
-            并非孤立的玩具 Demo，而是围绕真实产品场景打通身份边界、实时通信与企业协作的全栈体系。
-          </p>
-
-          <div class="ecosystem-grid">
-            <div class="eco-node">
-              <strong>Nexus · 开发者平台</strong>
-              <span>对外提供开放 API、配额与多端控制台，通过一次性 launch-grant 与画像同步无缝拉起在线客服。</span>
-            </div>
-
-            <div class="eco-connector" aria-hidden="true">
-              <span>⇄</span>
-              <span>单点接入 &amp; 未读角标</span>
-            </div>
-
-            <div class="eco-node">
-              <strong>NewCrisp · 实时客服台</strong>
-              <span>承接 Nexus 已登录用户与外部官网 Shadow DOM 悬浮窗访客，提供实时对话、协同备注与满意度分析。</span>
-            </div>
-
-            <div class="eco-connector" aria-hidden="true">
-              <span>·</span>
-              <span>同源工程底座</span>
-            </div>
-
-            <div class="eco-node">
-              <strong>FlowOps · 工单与知识库</strong>
-              <span>面向企业内部的深度异步工单流转、SLA 监控、消息队列通知与 Milvus 向量 AI 相似知识推荐。</span>
             </div>
           </div>
-
-          <div id="stack" class="eco-base">
-            <span class="eco-base-label">统一工程技术栈：</span>
-            <span v-for="tech in SITE_PROFILE.coreStack" :key="tech" class="stack-tag">{{ tech }}</span>
+        </section>
+        <section class="shell block rooms" id="stack">
+          <a v-for="r in rooms" :key="r.path" :href="href(r.path)"
+            ><img :src="pic(r.image)" :alt="r.title" loading="lazy" />
+            <p class="ey">{{ r.name }}</p>
+            <h2>{{ r.title }} ↗</h2>
+            <p>{{ r.text }}</p></a
+          >
+        </section>
+        <section class="about" id="about">
+          <div class="shell aboutgrid">
+            <div>
+              <p class="ey">About the maker</p>
+              <h2>关于简小淼</h2>
+            </div>
+            <div>
+              <p>{{ SITE_PROFILE.intro }}</p>
+              <a class="textlink" :href="SITE_PROFILE.githubProfile"
+                >GitHub · jianxiaomiao ↗</a
+              >
+            </div>
+          </div>
+        </section>
+      </template>
+      <template v-else-if="project && chapter">
+        <div class="shell block">
+          <a class="backlink" :href="href('/#projects')">← 软件作品</a>
+          <section class="detailhero">
+            <div>
+              <p class="ey">Software project</p>
+              <h1 class="latin">{{ project.name }}</h1>
+              <h2>{{ shorts[project.id] }}</h2>
+              <p>{{ project.tagline }}</p>
+              <div class="actions">
+                <a
+                  class="primarylink"
+                  :href="href('/explore/?place=' + buildings[project.id])"
+                  >探访对应建筑 →</a
+                ><a :href="project.repoUrl">GitHub 仓库 ↗</a>
+              </div>
+            </div>
+            <figure>
+              <img
+                :src="pic(buildings[project.id])"
+                :alt="project.name + ' 对应的 Codeville 建筑'"
+              />
+              <figcaption>
+                Codeville ·
+                {{
+                  { NX: '科技研究所', FO: '任务调度中心', NC: '通信邮局' }[
+                    buildings[project.id]
+                  ]
+                }}
+              </figcaption>
+            </figure>
+          </section>
+          <section class="reading">
+            <aside>
+              <p class="ey">Project notes</p>
+              <a href="#engineering">工程实践</a><a href="#stack">项目技术栈</a>
+            </aside>
+            <div>
+              <h2 id="engineering">工程实践</h2>
+              <ul>
+                <li v-for="item in project.highlights" :key="item">
+                  {{ item }}
+                </li>
+              </ul>
+              <h2 id="stack">项目技术栈</h2>
+              <p>{{ project.stack.join('　·　') }}</p>
+              <h2>相关系统演示</h2>
+              <p>{{ chapter.text }}</p>
+              <a class="textlink" :href="href('/systems/#' + chapter.id)"
+                >阅读「{{ chapter.title }}」 →</a
+              >
+              <div class="actions">
+                <a v-if="project.liveUrl" :href="project.liveUrl"
+                  >{{ project.liveLabel }} ↗</a
+                ><button hidden data-copy :data-url="project.repoUrl">
+                  复制仓库地址</button
+                ><output aria-live="polite" />
+              </div>
+            </div>
+          </section>
+        </div>
+      </template>
+      <section v-else-if="route === '/systems/'" class="shell block">
+        <p class="ey">Systems Lab</p>
+        <h1>系统实验室</h1>
+        <p class="standfirst">
+          在小镇中观察一次业务操作，也可以沿着文字读完整条链路。三章在浏览器内模拟。
+        </p>
+        <article
+          v-for="(c, i) in chapters"
+          :id="c.id"
+          :key="c.id"
+          class="chapterarticle"
+        >
+          <img :src="pic(c.image)" :alt="c.project + ' 的小镇建筑'" />
+          <div>
+            <p class="ey">Chapter 0{{ i + 1 }} · {{ c.project }}</p>
+            <h2>{{ c.title }}</h2>
+            <p>{{ c.text }}</p>
+            <p class="branches">{{ c.branches }}</p>
+            <a class="primarylink" :href="href('/explore/?chapter=' + c.id)"
+              >打开章节配置 →</a
+            >
+            <details class="source-frame">
+              <summary>阅读步骤与实际画面</summary>
+              <ol>
+                <li v-for="step in c.steps" :key="step">{{ step }}</li>
+              </ol>
+              <figure>
+                <img
+                  :src="pic(c.evidence)"
+                  :alt="c.title + ' 的 Phase 8 原始演示截图'"
+                  loading="lazy"
+                />
+                <figcaption>Phase 8 演示实录</figcaption>
+              </figure>
+            </details>
+          </div>
+        </article>
+      </section>
+      <section v-else-if="route === '/studio/'" class="shell block">
+        <p class="ey">Personal workspace</p>
+        <div class="detailhero">
+          <div>
+            <h1 class="latin">Studio</h1>
+            <h2>个人工作室</h2>
+            <p>在工作台上读项目，在书架前看技术，在白板旁梳理系统设计。</p>
+            <a class="textlink" :href="href('/explore/?place=ST')"
+              >走近工作室 →</a
+            >
+          </div>
+          <img :src="pic('inside')" alt="工作室展开后的室内实景" />
+        </div>
+        <div class="reading">
+          <aside>
+            <p class="ey">Studio index</p>
+            <a href="#tech">技术栈</a><a href="#interior">室内热点</a>
+          </aside>
+          <div>
+            <h2 id="tech">书架上的技术栈</h2>
+            <p v-for="p in PROJECTS" :key="p.id">
+              <a :href="href('/projects/' + p.id + '/')"
+                ><b>{{ p.name }} ↗</b></a
+              >　{{ p.stack.join(' · ') }}
+            </p>
+            <h2>学习中的工程问题</h2>
+            <p>
+              同一次调用中，配额事务和后台用量如何分开？丢失回执时，同一张工单如何被识别？
+            </p>
+            <a class="textlink" :href="href('/systems/')"
+              >前往系统实验室逐步观察 →</a
+            >
+            <h2 id="interior">室内热点</h2>
+            <div class="spotlinks">
+              <a
+                v-for="[id, name, desc] in spots"
+                :key="id"
+                :href="href('/explore/?place=ST&hotspot=' + id)"
+                >{{ name }} · {{ desc }} →</a
+              >
+            </div>
           </div>
         </div>
+      </section>
+      <section
+        v-else-if="route === '/creative/'"
+        class="shell block"
+        id="frostwick"
+      >
+        <p class="ey">Creative Lab · Collection</p>
+        <div class="detailhero">
+          <div>
+            <h1 class="latin">Frostwick</h1>
+            <h2>霜镇夜邮局</h2>
+            <p>
+              一件微缩雪景球收藏。钟楼、红邮车和黄铜铭牌藏在球罩中，也陈列在
+              Codeville 的个人工作室里。
+            </p>
+            <a
+              class="primarylink"
+              :href="href('/explore/?place=ST&hotspot=Frostwick')"
+              >进入收藏品特写 →</a
+            >
+          </div>
+          <img :src="pic('collection')" alt="独立作品 Frostwick 的原始渲染" />
+        </div>
+        <figure class="collect">
+          <img :src="pic('globe')" alt="工作室收藏架上的 Frostwick" />
+          <figcaption>工作室中的 Frostwick · Codeville 实际模型画面</figcaption>
+        </figure>
+      </section>
+      <template v-else-if="route === '/explore/'">
+        <div class="explore-slot" data-runtime-slot>
+          <section class="shell explore-cover">
+            <div>
+              <p class="ey">Explore Codeville</p>
+              <h1>探索小镇</h1>
+              <p>四栋核心建筑、三个相邻街区与一间可以走进去的工作室。</p>
+              <button class="enable" data-enable hidden>启用三维探索 →</button
+              ><a class="textlink" href="#directory">浏览地点目录 ↓</a>
+            </div>
+            <img :src="pic('day-1280')" alt="Codeville 完整日光总览" />
+          </section>
+        </div>
+        <section class="shell block guide" data-static-guide id="directory">
+          <p class="ey">Town directory</p>
+          <h2>地点与作品</h2>
+          <div class="guidegrid">
+            <div>
+              <h3>建筑</h3>
+              <a
+                v-for="p in PROJECTS"
+                :key="p.id"
+                :href="href('/projects/' + p.id + '/')"
+                >{{ p.name }} · {{ shorts[p.id] }} ↗</a
+              ><a :href="href('/studio/')">Portal · 个人工作室 ↗</a>
+            </div>
+            <div>
+              <h3>中央双环</h3>
+              <a
+                v-for="c in chapters"
+                :key="c.id"
+                :href="href('/systems/#' + c.id)"
+                >{{ c.title }} ↗</a
+              >
+            </div>
+            <div>
+              <h3>街区</h3>
+              <a
+                v-for="[id, name] in districts"
+                :key="id"
+                :href="href('/explore/?view=' + id)"
+                >{{ name }} →</a
+              >
+            </div>
+          </div>
+          <details>
+            <summary>查看街区海报与室内热点</summary>
+            <div class="projects">
+              <figure v-for="[id, name] in districts" :key="id">
+                <img :src="pic(id)" :alt="name" loading="lazy" />
+                <figcaption>{{ name }}</figcaption>
+              </figure>
+            </div>
+            <div class="spotlinks">
+              <a
+                v-for="[id, name, desc] in spots"
+                :key="id"
+                :href="href('/explore/?place=ST&hotspot=' + id)"
+                >{{ name }} · {{ desc }}</a
+              >
+            </div>
+          </details>
+        </section>
+      </template>
+      <section v-else class="shell block">
+        <p class="ey">404</p>
+        <h1>找不到这个页面</h1>
+        <a class="primarylink" :href="href('/')">返回作品集 →</a>
+      </section>
+    </main>
+    <footer class="foot">
+      <div class="shell">
+        <a class="signature" :href="href('/')">简小淼 <em>Studio</em></a
+        ><a :href="SITE_PROFILE.githubProfile">GitHub ↗</a>
       </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>© {{ new Date().getFullYear() }} {{ SITE_PROFILE.brand }} · Built with Vue 3 &amp; Vite</span>
-      <div class="footer-links">
-        <a v-for="project in PROJECTS" :key="project.id" :href="project.repoUrl" target="_blank" rel="noopener noreferrer">
-          {{ project.name }}
-        </a>
-        <a :href="SITE_PROFILE.githubProfile" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </div>
-    </div>
-  </footer>
-
-  <div v-if="toastMessage" class="toast" role="status" aria-live="polite">{{ toastMessage }}</div>
+    </footer>
+  </div>
 </template>

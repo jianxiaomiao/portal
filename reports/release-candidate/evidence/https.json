@@ -1,0 +1,31 @@
+{
+  "/": [
+    200,
+    5788,
+    "no-store"
+  ],
+  "/projects/newcrisp/": [
+    200,
+    3494,
+    "no-store"
+  ],
+  "/explore/?model=raw": [
+    200,
+    3911,
+    "no-store"
+  ],
+  "/town-6c2fa5d037a0/Town.meshopt.glb": [
+    200,
+    7591900,
+    "no-store"
+  ],
+  "/reports/": [
+    404
+  ],
+  "/server.key": [
+    404
+  ],
+  "/assets/": [
+    404
+  ]
+}

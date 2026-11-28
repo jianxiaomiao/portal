@@ -1,0 +1,90 @@
+{
+  "chatFrozen": [
+    0,
+    0.13857692307692315
+  ],
+  "chatResumed": [
+    0,
+    0.22007692307692295
+  ],
+  "realTabs": true,
+  "hiddenSampleMs": 1500,
+  "frozen": {
+    "mode": "running",
+    "active": false,
+    "reduced": false,
+    "level": 4,
+    "times": [
+      1.0220000000000007,
+      1.0220000000000007,
+      1.0220000000000007,
+      1.0220000000000007
+    ],
+    "owners": [],
+    "van": [
+      -6.51,
+      0.17,
+      -4.15
+    ],
+    "leg": 0,
+    "parked": true,
+    "distance": 0,
+    "period": 72.99917831191594
+  },
+  "last": {
+    "mode": "running",
+    "active": false,
+    "reduced": false,
+    "level": 4,
+    "times": [
+      1.0220000000000007,
+      1.0220000000000007,
+      1.0220000000000007,
+      1.0220000000000007
+    ],
+    "owners": [],
+    "van": [
+      -6.51,
+      0.17,
+      -4.15
+    ],
+    "leg": 0,
+    "parked": true,
+    "distance": 0,
+    "period": 72.99917831191594
+  },
+  "now": {
+    "mode": "running",
+    "active": true,
+    "reduced": false,
+    "level": 4,
+    "times": [
+      1.2282000000000015,
+      1.2282000000000015,
+      1.2282000000000015,
+      1.2282000000000015
+    ],
+    "owners": [],
+    "van": [
+      -6.51,
+      0.17,
+      -4.15
+    ],
+    "leg": 0,
+    "parked": true,
+    "distance": 0,
+    "period": 72.99917831191594
+  },
+  "events": [
+    {
+      "hidden": true,
+      "t": 6586.5999999996275,
+      "phase": 1.0220000000000007
+    },
+    {
+      "hidden": false,
+      "t": 8271.400000000373,
+      "phase": 1.0220000000000007
+    }
+  ]
+}

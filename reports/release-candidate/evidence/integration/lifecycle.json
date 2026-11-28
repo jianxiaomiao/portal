@@ -1,0 +1,204 @@
+{
+  "cycles": [
+    {
+      "round": 1,
+      "same": true,
+      "requests": 1,
+      "modelCount": 1,
+      "transfer": 7592200,
+      "encoded": 7591900,
+      "left": {
+        "canvas": 0,
+        "raf": 0,
+        "oldConnected": false,
+        "contextLost": true
+      }
+    },
+    {
+      "round": 2,
+      "same": true,
+      "requests": 1,
+      "modelCount": 1,
+      "transfer": 7592200,
+      "encoded": 7591900,
+      "left": {
+        "canvas": 0,
+        "raf": 0,
+        "oldConnected": false,
+        "contextLost": true
+      }
+    },
+    {
+      "round": 3,
+      "same": true,
+      "requests": 1,
+      "modelCount": 1,
+      "transfer": 7592200,
+      "encoded": 7591900,
+      "left": {
+        "canvas": 0,
+        "raf": 0,
+        "oldConnected": false,
+        "contextLost": true
+      }
+    },
+    {
+      "round": 4,
+      "same": true,
+      "requests": 1,
+      "modelCount": 1,
+      "transfer": 7592200,
+      "encoded": 7591900,
+      "left": {
+        "canvas": 0,
+        "raf": 0,
+        "oldConnected": false,
+        "contextLost": true
+      }
+    },
+    {
+      "round": 5,
+      "same": true,
+      "requests": 1,
+      "modelCount": 1,
+      "transfer": 7592200,
+      "encoded": 7591900,
+      "left": {
+        "canvas": 0,
+        "raf": 0,
+        "oldConnected": false,
+        "contextLost": true
+      }
+    },
+    {
+      "round": 6,
+      "same": true,
+      "requests": 1,
+      "modelCount": 1,
+      "transfer": 7592200,
+      "encoded": 7591900,
+      "left": {
+        "canvas": 0,
+        "raf": 0,
+        "oldConnected": false,
+        "contextLost": true
+      }
+    },
+    {
+      "round": 7,
+      "same": true,
+      "requests": 1,
+      "modelCount": 1,
+      "transfer": 7592200,
+      "encoded": 7591900,
+      "left": {
+        "canvas": 0,
+        "raf": 0,
+        "oldConnected": false,
+        "contextLost": true
+      }
+    },
+    {
+      "round": 8,
+      "same": true,
+      "requests": 1,
+      "modelCount": 1,
+      "transfer": 7592200,
+      "encoded": 7591900,
+      "left": {
+        "canvas": 0,
+        "raf": 0,
+        "oldConnected": false,
+        "contextLost": true
+      }
+    },
+    {
+      "round": 9,
+      "same": true,
+      "requests": 1,
+      "modelCount": 1,
+      "transfer": 7592200,
+      "encoded": 7591900,
+      "left": {
+        "canvas": 0,
+        "raf": 0,
+        "oldConnected": false,
+        "contextLost": true
+      }
+    },
+    {
+      "round": 10,
+      "same": true,
+      "requests": 1,
+      "modelCount": 1,
+      "transfer": 7592200,
+      "encoded": 7591900,
+      "left": {
+        "canvas": 0,
+        "raf": 0,
+        "oldConnected": false,
+        "contextLost": true
+      }
+    }
+  ],
+  "fallback": [
+    {
+      "kind": "meshopt",
+      "requests": [
+        "Town.meshopt.glb",
+        "Town.glb"
+      ]
+    },
+    {
+      "kind": "decoder",
+      "requests": [
+        "Town.meshopt.glb",
+        "Town.glb"
+      ]
+    },
+    {
+      "kind": "models",
+      "requests": [
+        "Town.meshopt.glb",
+        "Town.glb"
+      ]
+    },
+    {
+      "kind": "layout",
+      "requests": [
+        "Town.meshopt.glb"
+      ]
+    }
+  ],
+  "bookmarks": {
+    "place": "FO",
+    "theme": "night",
+    "before": [
+      11.707096438633046,
+      13.945385106262982,
+      8.965907374089223
+    ],
+    "after": [
+      11.691270488904866,
+      13.949511621004238,
+      8.962765620236336
+    ]
+  },
+  "mobile": {
+    "side": "staff",
+    "step": "launch",
+    "clientRead": 0,
+    "staffRead": 0,
+    "touchReleased": true,
+    "overflow": false
+  },
+  "races": [
+    {
+      "case": "double click + promote while loading + leave before completion",
+      "modelRequests": 1,
+      "canvasAfter": 0
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

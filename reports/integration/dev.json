@@ -1,0 +1,23 @@
+{
+  "/": [
+    200,
+    "简小淼 · 软件作品与 Codeville 小镇",
+    "你好，\n我是简小淼。"
+  ],
+  "/projects/nexus/": [
+    200,
+    "Nexus · Developer API Platform",
+    "Nexus"
+  ],
+  "/systems/": [
+    200,
+    "Systems Lab · 系统实验室",
+    "系统实验室"
+  ],
+  "/bad-route/": [
+    404,
+    "找不到这个页面",
+    "找不到这个页面"
+  ],
+  "explore": "Nexus"
+}

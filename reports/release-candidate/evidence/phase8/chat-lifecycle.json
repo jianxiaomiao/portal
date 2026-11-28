@@ -1,0 +1,590 @@
+{
+  "browser": "158.0.8127.88",
+  "cycles": [
+    {
+      "geometry": 308,
+      "material": 59,
+      "texture": 5,
+      "model": 1,
+      "owners": []
+    },
+    {
+      "geometry": 308,
+      "material": 59,
+      "texture": 5,
+      "model": 1,
+      "owners": []
+    },
+    {
+      "geometry": 308,
+      "material": 59,
+      "texture": 5,
+      "model": 1,
+      "owners": []
+    },
+    {
+      "geometry": 308,
+      "material": 59,
+      "texture": 5,
+      "model": 1,
+      "owners": []
+    },
+    {
+      "geometry": 308,
+      "material": 59,
+      "texture": 5,
+      "model": 1,
+      "owners": []
+    },
+    {
+      "geometry": 308,
+      "material": 59,
+      "texture": 5,
+      "model": 1,
+      "owners": []
+    },
+    {
+      "geometry": 308,
+      "material": 59,
+      "texture": 5,
+      "model": 1,
+      "owners": []
+    },
+    {
+      "geometry": 308,
+      "material": 59,
+      "texture": 5,
+      "model": 1,
+      "owners": []
+    },
+    {
+      "geometry": 308,
+      "material": 59,
+      "texture": 5,
+      "model": 1,
+      "owners": []
+    },
+    {
+      "geometry": 308,
+      "material": 59,
+      "texture": 5,
+      "model": 1,
+      "owners": []
+    }
+  ],
+  "models": [
+    {
+      "model": "Town.glb",
+      "positions": [
+        {
+          "x": 678.1804598094241,
+          "y": 196.63593467166805
+        },
+        {
+          "x": 237.82093523744942,
+          "y": 250.87198497077674
+        },
+        {
+          "x": 237.82093523744942,
+          "y": 275.5104328110931
+        }
+      ],
+      "width": 931.859375,
+      "height": 610,
+      "edge": 63.58246535321419,
+      "packet": [
+        -13.2926,
+        10.2595,
+        2.3480999999999996
+      ],
+      "facing": 1.0000000000000002,
+      "view": "chat-link",
+      "points": 81,
+      "anchors": [
+        [
+          -12.829999923706055,
+          6.82499985396862,
+          -6.369999885559082
+        ],
+        [
+          -13.420000076293945,
+          6.545000120997429,
+          4.75
+        ],
+        [
+          -13.420000076293945,
+          5.864999815821648,
+          4.75
+        ],
+        [
+          -8.75,
+          1.3650000542402267,
+          8.75
+        ],
+        [
+          -10.609999656677246,
+          1.1649999469518661,
+          7.449999809265137
+        ]
+      ]
+    },
+    {
+      "model": "Town.meshopt.glb",
+      "positions": [
+        {
+          "x": 678.1804598094241,
+          "y": 196.63593467166805
+        },
+        {
+          "x": 237.82093523744942,
+          "y": 250.87198497077674
+        },
+        {
+          "x": 237.82093523744942,
+          "y": 275.5104328110931
+        }
+      ],
+      "width": 931.859375,
+      "height": 610,
+      "edge": 63.58246535321419,
+      "packet": [
+        -13.2926,
+        10.2595,
+        2.3480999999999996
+      ],
+      "facing": 1.0000000000000002,
+      "view": "chat-link",
+      "points": 81,
+      "anchors": [
+        [
+          -12.829999923706055,
+          6.82499985396862,
+          -6.369999885559082
+        ],
+        [
+          -13.420000076293945,
+          6.545000120997429,
+          4.75
+        ],
+        [
+          -13.420000076293945,
+          5.864999815821648,
+          4.75
+        ],
+        [
+          -8.75,
+          1.3650000542402267,
+          8.75
+        ],
+        [
+          -10.609999656677246,
+          1.1649999469518661,
+          7.449999809265137
+        ]
+      ]
+    }
+  ],
+  "windows": [
+    {
+      "name": "总览待机",
+      "fps": 60.00099586715132,
+      "calls": 310,
+      "triangles": 276505,
+      "textures": 5,
+      "geometries": 308,
+      "jsHeapBytes": 24540128,
+      "dpr": 1,
+      "shadows": true,
+      "buffer": [
+        998,
+        610
+      ],
+      "bytes": 13812376,
+      "downloadMs": 202,
+      "parseMs": 282,
+      "readyMs": 2873.9000000001397,
+      "firstRenderMs": 1448.4000000001397,
+      "transferBytes": 13812676,
+      "encodedBytes": 13812376,
+      "durationMs": 4001.0000000000473,
+      "frames": 241,
+      "meanFrameMs": 16.666390041493777,
+      "p95FrameMs": 16.799999999999272,
+      "callsRange": [
+        305,
+        310
+      ],
+      "trianglesRange": [
+        276159,
+        276505
+      ],
+      "shadowUpdates": 16,
+      "shadowCallsPerFrame": 5.045643153526971,
+      "shadowPeakCalls": 76,
+      "shadowTrianglesPerFrame": 1368.8298755186722,
+      "shadowPeakTriangles": 20618,
+      "geometry": 308,
+      "material": 59,
+      "texture": 5,
+      "model": 1,
+      "owners": []
+    },
+    {
+      "name": "通信邮局特写",
+      "fps": 60.002489729864315,
+      "calls": 117,
+      "triangles": 167924,
+      "textures": 5,
+      "geometries": 308,
+      "jsHeapBytes": 28792967,
+      "dpr": 1,
+      "shadows": true,
+      "buffer": [
+        998,
+        610
+      ],
+      "bytes": 13812376,
+      "downloadMs": 202,
+      "parseMs": 282,
+      "readyMs": 2873.9000000001397,
+      "firstRenderMs": 1448.4000000001397,
+      "transferBytes": 13812676,
+      "encodedBytes": 13812376,
+      "durationMs": 4006.6000000000004,
+      "frames": 241,
+      "meanFrameMs": 16.66597510373444,
+      "p95FrameMs": 16.700000000000728,
+      "callsRange": [
+        117,
+        119
+      ],
+      "trianglesRange": [
+        167924,
+        168180
+      ],
+      "shadowUpdates": 30,
+      "shadowCallsPerFrame": 9.448132780082988,
+      "shadowPeakCalls": 76,
+      "shadowTrianglesPerFrame": 2566.182572614108,
+      "shadowPeakTriangles": 20618,
+      "geometry": 308,
+      "material": 59,
+      "texture": 5,
+      "model": 1,
+      "owners": []
+    },
+    {
+      "name": "身份接入播放",
+      "fps": 60.00180456555084,
+      "calls": 150,
+      "triangles": 206655,
+      "textures": 5,
+      "geometries": 311,
+      "jsHeapBytes": 28324578,
+      "dpr": 1,
+      "shadows": true,
+      "buffer": [
+        932,
+        610
+      ],
+      "bytes": 13812376,
+      "downloadMs": 202,
+      "parseMs": 282,
+      "readyMs": 2873.9000000001397,
+      "firstRenderMs": 1448.4000000001397,
+      "transferBytes": 13812676,
+      "encodedBytes": 13812376,
+      "durationMs": 4414.5,
+      "frames": 266,
+      "meanFrameMs": 16.666165413533836,
+      "p95FrameMs": 16.700000000000728,
+      "callsRange": [
+        118,
+        150
+      ],
+      "trianglesRange": [
+        176130,
+        206655
+      ],
+      "shadowUpdates": 33,
+      "shadowCallsPerFrame": 9.428571428571429,
+      "shadowPeakCalls": 76,
+      "shadowTrianglesPerFrame": 2557.872180451128,
+      "shadowPeakTriangles": 20618,
+      "geometry": 311,
+      "material": 63,
+      "texture": 5,
+      "model": 1,
+      "owners": []
+    },
+    {
+      "name": "坐席至回复播放",
+      "fps": 60.000885621927964,
+      "calls": 115,
+      "triangles": 166456,
+      "textures": 5,
+      "geometries": 312,
+      "jsHeapBytes": 27473362,
+      "dpr": 1,
+      "shadows": true,
+      "buffer": [
+        932,
+        610
+      ],
+      "bytes": 13812376,
+      "downloadMs": 202,
+      "parseMs": 282,
+      "readyMs": 2873.9000000001397,
+      "firstRenderMs": 1448.4000000001397,
+      "transferBytes": 13812676,
+      "encodedBytes": 13812376,
+      "durationMs": 4501.899999999954,
+      "frames": 271,
+      "meanFrameMs": 16.66642066420665,
+      "p95FrameMs": 16.799999999999272,
+      "callsRange": [
+        112,
+        116
+      ],
+      "trianglesRange": [
+        165936,
+        166456
+      ],
+      "shadowUpdates": 34,
+      "shadowCallsPerFrame": 9.535055350553506,
+      "shadowPeakCalls": 76,
+      "shadowTrianglesPerFrame": 2586.760147601476,
+      "shadowPeakTriangles": 20618,
+      "geometry": 312,
+      "material": 63,
+      "texture": 5,
+      "model": 1,
+      "owners": []
+    },
+    {
+      "name": "环境暂停时章节独立发光",
+      "fps": 60.00263747857055,
+      "calls": 114,
+      "triangles": 166088,
+      "textures": 5,
+      "geometries": 312,
+      "jsHeapBytes": 32002573,
+      "dpr": 1,
+      "shadows": true,
+      "buffer": [
+        932,
+        610
+      ],
+      "bytes": 13812376,
+      "downloadMs": 202,
+      "parseMs": 282,
+      "readyMs": 2873.9000000001397,
+      "firstRenderMs": 1448.4000000001397,
+      "transferBytes": 13812676,
+      "encodedBytes": 13812376,
+      "durationMs": 1508.0999999999985,
+      "frames": 91,
+      "meanFrameMs": 16.66593406593405,
+      "p95FrameMs": 16.80000000000291,
+      "callsRange": [
+        114,
+        114
+      ],
+      "trianglesRange": [
+        166088,
+        166088
+      ],
+      "shadowUpdates": 0,
+      "shadowCallsPerFrame": 0,
+      "shadowPeakCalls": 0,
+      "shadowTrianglesPerFrame": 0,
+      "shadowPeakTriangles": 0,
+      "geometry": 312,
+      "material": 63,
+      "texture": 5,
+      "model": 1,
+      "owners": []
+    },
+    {
+      "name": "退出后总览",
+      "fps": 60.00331510028194,
+      "calls": 308,
+      "triangles": 276249,
+      "textures": 5,
+      "geometries": 308,
+      "jsHeapBytes": 37643541,
+      "dpr": 1,
+      "shadows": true,
+      "buffer": [
+        998,
+        610
+      ],
+      "bytes": 13812376,
+      "downloadMs": 202,
+      "parseMs": 282,
+      "readyMs": 2873.9000000001397,
+      "firstRenderMs": 1448.4000000001397,
+      "transferBytes": 13812676,
+      "encodedBytes": 13812376,
+      "durationMs": 3010.799999999901,
+      "frames": 181,
+      "meanFrameMs": 16.66574585635355,
+      "p95FrameMs": 16.70000000001164,
+      "callsRange": [
+        307,
+        310
+      ],
+      "trianglesRange": [
+        276249,
+        276505
+      ],
+      "shadowUpdates": 11,
+      "shadowCallsPerFrame": 4.6187845303867405,
+      "shadowPeakCalls": 76,
+      "shadowTrianglesPerFrame": 1253.0276243093922,
+      "shadowPeakTriangles": 20618,
+      "geometry": 308,
+      "material": 59,
+      "texture": 5,
+      "model": 1,
+      "owners": []
+    },
+    {
+      "name": "连续切换三章",
+      "fps": 60.00245534344108,
+      "calls": 308,
+      "triangles": 276249,
+      "textures": 5,
+      "geometries": 308,
+      "jsHeapBytes": 36437906,
+      "dpr": 1,
+      "shadows": true,
+      "buffer": [
+        998,
+        610
+      ],
+      "bytes": 13812376,
+      "downloadMs": 202,
+      "parseMs": 282,
+      "readyMs": 2873.9000000001397,
+      "firstRenderMs": 1448.4000000001397,
+      "transferBytes": 13812676,
+      "encodedBytes": 13812376,
+      "durationMs": 6503.1000000000495,
+      "frames": 391,
+      "meanFrameMs": 16.66598465473148,
+      "p95FrameMs": 16.70000000001164,
+      "callsRange": [
+        119,
+        310
+      ],
+      "trianglesRange": [
+        178100,
+        276505
+      ],
+      "shadowUpdates": 47,
+      "shadowCallsPerFrame": 8.997442455242966,
+      "shadowPeakCalls": 76,
+      "shadowTrianglesPerFrame": 2474.235294117647,
+      "shadowPeakTriangles": 20618,
+      "geometry": 308,
+      "material": 59,
+      "texture": 5,
+      "model": 1,
+      "owners": []
+    }
+  ],
+  "checks": [
+    "暂停、继续、单步暂停、重播及取消",
+    "章节单独运行不刷新阴影；NC 波纹、灯光、引用及全部抽测环境姿态逐项复位",
+    "三章十轮、章节卸载、真实 WebGL 上下文丢失及恢复",
+    "手机双端视图切换保留完整剧情快照、消息与阅读水位"
+  ],
+  "errors": [],
+  "deskFrame": {
+    "tower": {
+      "x": 355.34570624417006,
+      "y": 46.67600162262221
+    },
+    "desk": {
+      "x": 505.3530837898284,
+      "y": 422.413073409873
+    },
+    "inside": true
+  },
+  "contextRestore": {
+    "selected": "hub",
+    "view": "hub",
+    "selector": "normal",
+    "hubResources": {
+      "geometry": 307,
+      "material": 59,
+      "texture": 5,
+      "model": 1,
+      "owners": []
+    },
+    "overviewResources": {
+      "geometry": 308,
+      "material": 59,
+      "texture": 5,
+      "model": 1,
+      "owners": []
+    }
+  },
+  "mobileRoute": {
+    "model": "Town.meshopt.glb",
+    "positions": [
+      {
+        "x": 265.59642471077234,
+        "y": 126.06128342828204
+      },
+      {
+        "x": 93.13802721209123,
+        "y": 147.30179668919905
+      },
+      {
+        "x": 93.13802721209123,
+        "y": 156.9509742232285
+      }
+    ],
+    "width": 364.59375,
+    "height": 336.625,
+    "edge": 73.85691299404584,
+    "packet": [
+      -13.2926,
+      10.2595,
+      2.3480999999999996
+    ],
+    "facing": 1.0000000000000002,
+    "view": "chat-link",
+    "points": 81,
+    "anchors": [
+      [
+        -12.829999923706055,
+        6.82499985396862,
+        -6.369999885559082
+      ],
+      [
+        -13.420000076293945,
+        6.545000120997429,
+        4.75
+      ],
+      [
+        -13.420000076293945,
+        5.864999815821648,
+        4.75
+      ],
+      [
+        -8.75,
+        1.3650000542402267,
+        8.75
+      ],
+      [
+        -10.609999656677246,
+        1.1649999469518661,
+        7.449999809265137
+      ]
+    ]
+  },
+  "passed": true
+}

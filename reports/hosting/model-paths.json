@@ -1,0 +1,73 @@
+{
+  "browser": "158.0.8127.88",
+  "results": [
+    {
+      "prefix": "/",
+      "model": "meshopt",
+      "url": "/explore/?place=NC",
+      "httpStatus": 200,
+      "layout": [
+        "/town-6c2fa5d037a0/layout.json"
+      ],
+      "modelUrl": "/town-6c2fa5d037a0/Town.meshopt.glb",
+      "three": [
+        "/assets/three-Cp5cabWI.js"
+      ],
+      "decoder": [
+        "/assets/meshopt_decoder.module-BkEQAzru.js"
+      ],
+      "visibleCanvas": true,
+      "errors": []
+    },
+    {
+      "prefix": "/",
+      "model": "raw",
+      "url": "/explore/?place=NC&model=raw",
+      "httpStatus": 200,
+      "layout": [
+        "/town-6c2fa5d037a0/layout.json"
+      ],
+      "modelUrl": "/town-6c2fa5d037a0/Town.glb",
+      "three": [
+        "/assets/three-Cp5cabWI.js"
+      ],
+      "decoder": [],
+      "visibleCanvas": true,
+      "errors": []
+    },
+    {
+      "prefix": "/portal/",
+      "model": "meshopt",
+      "url": "/portal/explore/?place=NC",
+      "httpStatus": 200,
+      "layout": [
+        "/portal/town-6c2fa5d037a0/layout.json"
+      ],
+      "modelUrl": "/portal/town-6c2fa5d037a0/Town.meshopt.glb",
+      "three": [
+        "/portal/assets/three-Cp5cabWI.js"
+      ],
+      "decoder": [
+        "/portal/assets/meshopt_decoder.module-BkEQAzru.js"
+      ],
+      "visibleCanvas": true,
+      "errors": []
+    },
+    {
+      "prefix": "/portal/",
+      "model": "raw",
+      "url": "/portal/explore/?place=NC&model=raw",
+      "httpStatus": 200,
+      "layout": [
+        "/portal/town-6c2fa5d037a0/layout.json"
+      ],
+      "modelUrl": "/portal/town-6c2fa5d037a0/Town.glb",
+      "three": [
+        "/portal/assets/three-Cp5cabWI.js"
+      ],
+      "decoder": [],
+      "visibleCanvas": true,
+      "errors": []
+    }
+  ]
+}

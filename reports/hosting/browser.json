@@ -1,0 +1,237 @@
+{
+  "browser": "158.0.8127.88",
+  "prefixes": [
+    {
+      "prefix": "/",
+      "noJs": {
+        "routes": [
+          {
+            "path": "/",
+            "heading": "你好，\n我是简小淼。",
+            "links": 27,
+            "refreshed": 200
+          },
+          {
+            "path": "/projects/nexus/",
+            "heading": "Nexus",
+            "links": 20,
+            "refreshed": 200
+          },
+          {
+            "path": "/projects/flowops/",
+            "heading": "FlowOps",
+            "links": 20,
+            "refreshed": 200
+          },
+          {
+            "path": "/projects/newcrisp/",
+            "heading": "NewCrisp",
+            "links": 20,
+            "refreshed": 200
+          },
+          {
+            "path": "/explore/",
+            "heading": "探索小镇",
+            "links": 31,
+            "refreshed": 200
+          },
+          {
+            "path": "/systems/",
+            "heading": "系统实验室",
+            "links": 17,
+            "refreshed": 200
+          },
+          {
+            "path": "/studio/",
+            "heading": "Studio",
+            "links": 27,
+            "refreshed": 200
+          },
+          {
+            "path": "/creative/",
+            "heading": "Frostwick",
+            "links": 15,
+            "refreshed": 200
+          }
+        ],
+        "links": 24,
+        "visitedProject": "/projects/nexus/",
+        "historyReturnedTo": "/",
+        "modelRequests": [],
+        "chapterGuides": [
+          {
+            "title": "一次 Nexus API 请求",
+            "steps": 3,
+            "sourceImage": "/media-c0a27766cbce/api-response.webp"
+          },
+          {
+            "title": "一张工单的旅程",
+            "steps": 3,
+            "sourceImage": "/media-c0a27766cbce/ticket-delivery.webp"
+          },
+          {
+            "title": "一条客服消息",
+            "steps": 3,
+            "sourceImage": "/media-c0a27766cbce/chat-normal-panels.webp"
+          }
+        ]
+      },
+      "noWebGL": {
+        "ordinaryModelRequests": [],
+        "ordinaryScripts": [
+          "/assets/index-DxZ6eXPK.js"
+        ],
+        "enabledJsPages": 7,
+        "fallback": "静态总览",
+        "fallbackTarget": "/explore/?place=NC",
+        "projectAfterFallback": "/projects/newcrisp/",
+        "failedScripts": [],
+        "missingResponses": [],
+        "glbRequestsWithDisabledWebGL": []
+      },
+      "cache": {
+        "url": "/town-6c2fa5d037a0/Town.meshopt.glb",
+        "first": {
+          "status": 200,
+          "bytes": 7591900,
+          "transfer": 7592200,
+          "encoded": 7591900,
+          "durationMs": 61.40000000037253
+        },
+        "repeat": {
+          "status": 200,
+          "bytes": 7591900,
+          "transfer": 0,
+          "encoded": 7591900,
+          "durationMs": 14.699999999254942
+        },
+        "responses": [
+          {
+            "status": 200,
+            "fromDiskCache": false
+          },
+          {
+            "status": 200,
+            "fromDiskCache": true
+          }
+        ]
+      }
+    },
+    {
+      "prefix": "/portal/",
+      "noJs": {
+        "routes": [
+          {
+            "path": "/portal/",
+            "heading": "你好，\n我是简小淼。",
+            "links": 27,
+            "refreshed": 200
+          },
+          {
+            "path": "/portal/projects/nexus/",
+            "heading": "Nexus",
+            "links": 20,
+            "refreshed": 200
+          },
+          {
+            "path": "/portal/projects/flowops/",
+            "heading": "FlowOps",
+            "links": 20,
+            "refreshed": 200
+          },
+          {
+            "path": "/portal/projects/newcrisp/",
+            "heading": "NewCrisp",
+            "links": 20,
+            "refreshed": 200
+          },
+          {
+            "path": "/portal/explore/",
+            "heading": "探索小镇",
+            "links": 31,
+            "refreshed": 200
+          },
+          {
+            "path": "/portal/systems/",
+            "heading": "系统实验室",
+            "links": 17,
+            "refreshed": 200
+          },
+          {
+            "path": "/portal/studio/",
+            "heading": "Studio",
+            "links": 27,
+            "refreshed": 200
+          },
+          {
+            "path": "/portal/creative/",
+            "heading": "Frostwick",
+            "links": 15,
+            "refreshed": 200
+          }
+        ],
+        "links": 24,
+        "visitedProject": "/portal/projects/nexus/",
+        "historyReturnedTo": "/portal/",
+        "modelRequests": [],
+        "chapterGuides": [
+          {
+            "title": "一次 Nexus API 请求",
+            "steps": 3,
+            "sourceImage": "/portal/media-c0a27766cbce/api-response.webp"
+          },
+          {
+            "title": "一张工单的旅程",
+            "steps": 3,
+            "sourceImage": "/portal/media-c0a27766cbce/ticket-delivery.webp"
+          },
+          {
+            "title": "一条客服消息",
+            "steps": 3,
+            "sourceImage": "/portal/media-c0a27766cbce/chat-normal-panels.webp"
+          }
+        ]
+      },
+      "noWebGL": {
+        "ordinaryModelRequests": [],
+        "ordinaryScripts": [
+          "/portal/assets/index-ilKfFih7.js"
+        ],
+        "enabledJsPages": 7,
+        "fallback": "静态总览",
+        "fallbackTarget": "/portal/explore/?place=NC",
+        "projectAfterFallback": "/portal/projects/newcrisp/",
+        "failedScripts": [],
+        "missingResponses": [],
+        "glbRequestsWithDisabledWebGL": []
+      },
+      "cache": {
+        "url": "/portal/town-6c2fa5d037a0/Town.meshopt.glb",
+        "first": {
+          "status": 200,
+          "bytes": 7591900,
+          "transfer": 7592200,
+          "encoded": 7591900,
+          "durationMs": 71.69999999925494
+        },
+        "repeat": {
+          "status": 200,
+          "bytes": 7591900,
+          "transfer": 0,
+          "encoded": 7591900,
+          "durationMs": 15.099999999627471
+        },
+        "responses": [
+          {
+            "status": 200,
+            "fromDiskCache": false
+          },
+          {
+            "status": 200,
+            "fromDiskCache": true
+          }
+        ]
+      }
+    }
+  ]
+}

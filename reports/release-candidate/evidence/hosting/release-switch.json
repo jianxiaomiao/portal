@@ -1,0 +1,195 @@
+{
+  "browser": "158.0.8127.88",
+  "oldVersion": "town-6c2fa5d037a0",
+  "nextVersion": "town-4d8d126094fb",
+  "timings": {
+    "promotion": {
+      "minMs": 217,
+      "medianMs": 233,
+      "maxMs": 242
+    },
+    "reentry": {
+      "minMs": 792,
+      "medianMs": 959,
+      "maxMs": 1121
+    },
+    "warm-page": {
+      "minMs": 907,
+      "medianMs": 1041,
+      "maxMs": 1156
+    }
+  },
+  "rows": [
+    {
+      "kind": "old-tab-after-upgrade",
+      "version": "town-6c2fa5d037a0",
+      "elapsedMs": 9121,
+      "files": [
+        {
+          "path": "/town-6c2fa5d037a0/layout.json",
+          "transferSize": 56622,
+          "encodedBodySize": 56322
+        },
+        {
+          "path": "/town-6c2fa5d037a0/Town.meshopt.glb",
+          "transferSize": 7592200,
+          "encodedBodySize": 7591900
+        }
+      ]
+    },
+    {
+      "kind": "new-tab-after-upgrade",
+      "version": "town-4d8d126094fb",
+      "elapsedMs": 7403,
+      "files": [
+        {
+          "path": "/town-4d8d126094fb/layout.json",
+          "transferSize": 56623,
+          "encodedBodySize": 56323
+        },
+        {
+          "path": "/town-4d8d126094fb/Town.meshopt.glb",
+          "transferSize": 7592200,
+          "encodedBodySize": 7591900
+        }
+      ]
+    },
+    {
+      "kind": "promotion",
+      "version": "town-4d8d126094fb",
+      "elapsedMs": 217,
+      "files": []
+    },
+    {
+      "kind": "reentry",
+      "version": "town-4d8d126094fb",
+      "elapsedMs": 959,
+      "files": [
+        {
+          "path": "/town-4d8d126094fb/layout.json",
+          "transferSize": 0,
+          "encodedBodySize": 56323
+        },
+        {
+          "path": "/town-4d8d126094fb/Town.meshopt.glb",
+          "transferSize": 0,
+          "encodedBodySize": 7591900
+        }
+      ]
+    },
+    {
+      "kind": "warm-page",
+      "version": "town-4d8d126094fb",
+      "elapsedMs": 1041,
+      "files": [
+        {
+          "path": "/town-4d8d126094fb/layout.json",
+          "transferSize": 0,
+          "encodedBodySize": 56323
+        },
+        {
+          "path": "/town-4d8d126094fb/Town.meshopt.glb",
+          "transferSize": 0,
+          "encodedBodySize": 7591900
+        }
+      ]
+    },
+    {
+      "kind": "promotion",
+      "version": "town-4d8d126094fb",
+      "elapsedMs": 233,
+      "files": []
+    },
+    {
+      "kind": "reentry",
+      "version": "town-4d8d126094fb",
+      "elapsedMs": 792,
+      "files": [
+        {
+          "path": "/town-4d8d126094fb/layout.json",
+          "transferSize": 0,
+          "encodedBodySize": 56323
+        },
+        {
+          "path": "/town-4d8d126094fb/Town.meshopt.glb",
+          "transferSize": 0,
+          "encodedBodySize": 7591900
+        }
+      ]
+    },
+    {
+      "kind": "warm-page",
+      "version": "town-4d8d126094fb",
+      "elapsedMs": 907,
+      "files": [
+        {
+          "path": "/town-4d8d126094fb/layout.json",
+          "transferSize": 0,
+          "encodedBodySize": 56323
+        },
+        {
+          "path": "/town-4d8d126094fb/Town.meshopt.glb",
+          "transferSize": 0,
+          "encodedBodySize": 7591900
+        }
+      ]
+    },
+    {
+      "kind": "promotion",
+      "version": "town-4d8d126094fb",
+      "elapsedMs": 242,
+      "files": []
+    },
+    {
+      "kind": "reentry",
+      "version": "town-4d8d126094fb",
+      "elapsedMs": 1121,
+      "files": [
+        {
+          "path": "/town-4d8d126094fb/layout.json",
+          "transferSize": 0,
+          "encodedBodySize": 56323
+        },
+        {
+          "path": "/town-4d8d126094fb/Town.meshopt.glb",
+          "transferSize": 0,
+          "encodedBodySize": 7591900
+        }
+      ]
+    },
+    {
+      "kind": "warm-page",
+      "version": "town-4d8d126094fb",
+      "elapsedMs": 1156,
+      "files": [
+        {
+          "path": "/town-4d8d126094fb/layout.json",
+          "transferSize": 0,
+          "encodedBodySize": 56323
+        },
+        {
+          "path": "/town-4d8d126094fb/Town.meshopt.glb",
+          "transferSize": 0,
+          "encodedBodySize": 7591900
+        }
+      ]
+    },
+    {
+      "kind": "after-rollback",
+      "version": "town-6c2fa5d037a0",
+      "elapsedMs": 1350,
+      "files": [
+        {
+          "path": "/town-6c2fa5d037a0/layout.json",
+          "transferSize": 0,
+          "encodedBodySize": 56322
+        },
+        {
+          "path": "/town-6c2fa5d037a0/Town.meshopt.glb",
+          "transferSize": 0,
+          "encodedBodySize": 7591900
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "phase8/suite": 0,
+  "portal/integration": 0,
+  "portal/loading-edges": 0,
+  "portal/gestures": 0,
+  "portal/entry": 0,
+  "portal/loading": 0,
+  "hosting/check-files": 0,
+  "hosting/check-browser": 0,
+  "hosting/check-model-paths": 0,
+  "hosting/check-releases": 0
+}

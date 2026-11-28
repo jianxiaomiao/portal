@@ -1,0 +1,50 @@
+[
+  {
+    "model": "raw",
+    "ids": 196,
+    "streetDrawables": 26,
+    "staticOnly": true,
+    "bakes": 1,
+    "waveOpacity": [
+      0,
+      0.41984585943537067
+    ],
+    "visible": true,
+    "hidden": true,
+    "elbowZ": [
+      -0.4122561487802663,
+      -0.31932779780261134
+    ],
+    "network": [
+      {
+        "file": "/town-6c2fa5d037a0/Town.glb",
+        "body": 13812376,
+        "transfer": 13812676
+      }
+    ]
+  },
+  {
+    "model": "meshopt",
+    "ids": 196,
+    "streetDrawables": 26,
+    "staticOnly": true,
+    "bakes": 1,
+    "waveOpacity": [
+      0,
+      0.4198566090198291
+    ],
+    "visible": true,
+    "hidden": true,
+    "elbowZ": [
+      -0.4122459651732804,
+      -0.3193765871308281
+    ],
+    "network": [
+      {
+        "file": "/town-6c2fa5d037a0/Town.meshopt.glb",
+        "body": 7591900,
+        "transfer": 7592200
+      }
+    ]
+  }
+]

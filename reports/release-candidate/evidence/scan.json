@@ -1,0 +1,86 @@
+{
+  "files": {
+    "repository": 105,
+    "dist": 44,
+    "dist-check": 44,
+    "dist-pages": 44,
+    "dist-rollback-main-1807fc1": 3,
+    "reports": 103,
+    "releaseCandidateReports": 47
+  },
+  "rules": [
+    "private-key",
+    "cloud-key",
+    "provider-token",
+    "jwt",
+    "auth-header",
+    "secret-assignment",
+    "cookie-value",
+    "credential-url",
+    "host-path",
+    "email",
+    "cn-mobile",
+    "private-network"
+  ],
+  "paths": {
+    "host-path": [
+      "reports/phase8/restore-comparison-initial.txt",
+      "reports/phase8/town-views-initial.txt"
+    ],
+    "private-network": [
+      "tests/hosting/mobile-cert.sh",
+      "tests/hosting/mobile-https.py"
+    ]
+  },
+  "glb": [
+    {
+      "file": "Town.glb",
+      "bytes": 13812376,
+      "sha256": "9b8ad0d3bc037ad4c2a7d7ee7d4e2e8e51adbcc1b3edf470d9de629e38db6f06",
+      "generator": "Khronos glTF Blender I/O v4.5.51",
+      "extraObjects": 194,
+      "extraKeys": [
+        "codeville_id",
+        "environment_batch",
+        "export_unit",
+        "interactive",
+        "project",
+        "role"
+      ],
+      "externalURIs": [],
+      "images": [
+        "Codeville-Print",
+        "Frostwick-Label"
+      ],
+      "extensionsRequired": []
+    },
+    {
+      "file": "Town.meshopt.glb",
+      "bytes": 7591900,
+      "sha256": "2d85eb6cc44b844c5bb799969da215dbb8d3f0f88f0fb89b9e83af4ed5de148a",
+      "generator": "Khronos glTF Blender I/O v4.5.51",
+      "extraObjects": 194,
+      "extraKeys": [
+        "codeville_id",
+        "environment_batch",
+        "export_unit",
+        "interactive",
+        "project",
+        "role"
+      ],
+      "externalURIs": [],
+      "images": [
+        "Codeville-Print",
+        "Frostwick-Label"
+      ],
+      "extensionsRequired": [
+        "EXT_meshopt_compression"
+      ]
+    }
+  ],
+  "ocr": {
+    "items": 101,
+    "decodedWithText": 90,
+    "errors": 0
+  }
+}

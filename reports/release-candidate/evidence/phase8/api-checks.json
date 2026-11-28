@@ -1,0 +1,936 @@
+{
+  "browser": "158.0.8127.88",
+  "branches": [
+    {
+      "outcome": "success",
+      "opts": {},
+      "trace": [
+        {
+          "step": "send",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "log",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "header",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "key",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "app",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "owner",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "permit",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "pre",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "bind",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "bytes",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "locks",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "period",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "commit",
+          "used": 8,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "hash",
+          "used": 8,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "response",
+          "used": 8,
+          "http": 200,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "complete",
+          "used": 8,
+          "http": 200,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "event",
+          "used": 8,
+          "http": 200,
+          "usage": "已创建 eventId",
+          "eventId": "2c700e17-12bb-49f1-b285-65f86154ddf8"
+        },
+        {
+          "step": "submit",
+          "used": 8,
+          "http": 200,
+          "usage": "提交后台任务",
+          "eventId": "2c700e17-12bb-49f1-b285-65f86154ddf8"
+        },
+        {
+          "step": "queued",
+          "used": 8,
+          "http": 200,
+          "usage": "已入队",
+          "eventId": "2c700e17-12bb-49f1-b285-65f86154ddf8"
+        },
+        {
+          "step": "saved",
+          "used": 8,
+          "http": 200,
+          "usage": "已持久化",
+          "eventId": "2c700e17-12bb-49f1-b285-65f86154ddf8"
+        }
+      ],
+      "result": {
+        "code": "SUCCESS",
+        "message": "hash摘要成功",
+        "data": {
+          "hashContent": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824"
+        }
+      }
+    },
+    {
+      "outcome": "rate",
+      "opts": {},
+      "trace": [
+        {
+          "step": "send",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "log",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "header",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "key",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "app",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "owner",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "rateFull",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "response",
+          "used": 7,
+          "http": 429,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        }
+      ],
+      "result": {
+        "code": "APPLICATION_RATE_QUEUE_FULL",
+        "message": "Application 请求等待队列已满",
+        "data": null
+      }
+    },
+    {
+      "outcome": "quota",
+      "opts": {},
+      "trace": [
+        {
+          "step": "send",
+          "used": 8,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "log",
+          "used": 8,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "header",
+          "used": 8,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "key",
+          "used": 8,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "app",
+          "used": 8,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "owner",
+          "used": 8,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "permit",
+          "used": 8,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "pre",
+          "used": 8,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "bind",
+          "used": 8,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "bytes",
+          "used": 8,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "locks",
+          "used": 8,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "period",
+          "used": 8,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "exhausted",
+          "used": 8,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "response",
+          "used": 8,
+          "http": 429,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "complete",
+          "used": 8,
+          "http": 429,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "event",
+          "used": 8,
+          "http": 429,
+          "usage": "已创建 eventId",
+          "eventId": "2d9cbac4-1500-4d34-9bf9-efc1b9a740c6"
+        },
+        {
+          "step": "submit",
+          "used": 8,
+          "http": 429,
+          "usage": "提交后台任务",
+          "eventId": "2d9cbac4-1500-4d34-9bf9-efc1b9a740c6"
+        },
+        {
+          "step": "queued",
+          "used": 8,
+          "http": 429,
+          "usage": "已入队",
+          "eventId": "2d9cbac4-1500-4d34-9bf9-efc1b9a740c6"
+        },
+        {
+          "step": "saved",
+          "used": 8,
+          "http": 429,
+          "usage": "已持久化",
+          "eventId": "2d9cbac4-1500-4d34-9bf9-efc1b9a740c6"
+        }
+      ],
+      "result": {
+        "code": "APPLICATION_QUOTA_EXHAUSTED",
+        "message": "应用当前720小时周期的调用额度已耗尽",
+        "data": null
+      }
+    },
+    {
+      "outcome": "invalid",
+      "opts": {},
+      "trace": [
+        {
+          "step": "send",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "log",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "header",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "key",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "app",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "owner",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "permit",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "pre",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "invalid",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "response",
+          "used": 7,
+          "http": 400,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "complete",
+          "used": 7,
+          "http": 400,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "event",
+          "used": 7,
+          "http": 400,
+          "usage": "已创建 eventId",
+          "eventId": "c1f6a24a-c16d-4a9d-b3d1-18e7513d729b"
+        },
+        {
+          "step": "submit",
+          "used": 7,
+          "http": 400,
+          "usage": "提交后台任务",
+          "eventId": "c1f6a24a-c16d-4a9d-b3d1-18e7513d729b"
+        },
+        {
+          "step": "queued",
+          "used": 7,
+          "http": 400,
+          "usage": "已入队",
+          "eventId": "c1f6a24a-c16d-4a9d-b3d1-18e7513d729b"
+        },
+        {
+          "step": "saved",
+          "used": 7,
+          "http": 400,
+          "usage": "已持久化",
+          "eventId": "c1f6a24a-c16d-4a9d-b3d1-18e7513d729b"
+        }
+      ],
+      "result": {
+        "code": "VALIDATION_ERROR",
+        "message": "请求参数校验失败",
+        "data": {
+          "algorithm": "算法为空"
+        }
+      }
+    },
+    {
+      "outcome": "rate",
+      "opts": {
+        "timeout": true
+      },
+      "trace": [
+        {
+          "step": "send",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "log",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "header",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "key",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "app",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "owner",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "wait",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "rateTimeout",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "response",
+          "used": 7,
+          "http": 429,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        }
+      ],
+      "result": {
+        "code": "APPLICATION_RATE_WAIT_TIMEOUT",
+        "message": "请求等待限流许可超时",
+        "data": null
+      }
+    },
+    {
+      "outcome": "success",
+      "opts": {
+        "wait": true,
+        "fail": true
+      },
+      "trace": [
+        {
+          "step": "send",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "log",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "header",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "key",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "app",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "owner",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "wait",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "permit",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "pre",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "bind",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "bytes",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "locks",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "period",
+          "used": 7,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "commit",
+          "used": 8,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "hash",
+          "used": 8,
+          "http": 0,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "response",
+          "used": 8,
+          "http": 200,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "complete",
+          "used": 8,
+          "http": 200,
+          "usage": "尚未创建事件",
+          "eventId": ""
+        },
+        {
+          "step": "event",
+          "used": 8,
+          "http": 200,
+          "usage": "已创建 eventId",
+          "eventId": "459e438c-6368-43db-9a61-3e228dab4ca0"
+        },
+        {
+          "step": "submit",
+          "used": 8,
+          "http": 200,
+          "usage": "提交后台任务",
+          "eventId": "459e438c-6368-43db-9a61-3e228dab4ca0"
+        },
+        {
+          "step": "queued",
+          "used": 8,
+          "http": 200,
+          "usage": "已入队",
+          "eventId": "459e438c-6368-43db-9a61-3e228dab4ca0"
+        },
+        {
+          "step": "failed",
+          "used": 8,
+          "http": 200,
+          "usage": "写入失败",
+          "eventId": "459e438c-6368-43db-9a61-3e228dab4ca0"
+        }
+      ],
+      "result": {
+        "code": "SUCCESS",
+        "message": "hash摘要成功",
+        "data": {
+          "hashContent": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824"
+        }
+      }
+    }
+  ],
+  "samples": [
+    {
+      "name": "小镇总览 · 待机",
+      "fps": 60.00132599615462,
+      "calls": 308,
+      "triangles": 276249,
+      "textures": 5,
+      "geometries": 308,
+      "jsHeapBytes": 26454628,
+      "dpr": 1,
+      "shadows": true,
+      "buffer": [
+        998,
+        610
+      ],
+      "bytes": 7591900,
+      "downloadMs": 129.5,
+      "parseMs": 106.89999999990687,
+      "readyMs": 1686.6999999999534,
+      "firstRenderMs": 842.6000000000931,
+      "transferBytes": 7592200,
+      "encodedBytes": 7591900,
+      "durationMs": 3000.5000000000928,
+      "frames": 181,
+      "meanFrameMs": 16.666298342541435,
+      "p95FrameMs": 16.799999999999272,
+      "callsRange": [
+        305,
+        308
+      ],
+      "trianglesRange": [
+        276159,
+        276249
+      ],
+      "shadowUpdates": 12,
+      "shadowCallsPerFrame": 5.038674033149171,
+      "shadowPeakCalls": 76,
+      "shadowTrianglesPerFrame": 1366.9392265193371,
+      "shadowPeakTriangles": 20618,
+      "materials": 59,
+      "models": 1,
+      "glb": 1
+    },
+    {
+      "name": "Nexus 原建筑视角 · 待机",
+      "fps": 60.00132599615464,
+      "calls": 116,
+      "triangles": 178002,
+      "textures": 5,
+      "geometries": 308,
+      "jsHeapBytes": 29382138,
+      "dpr": 1,
+      "shadows": true,
+      "buffer": [
+        998,
+        610
+      ],
+      "bytes": 7591900,
+      "downloadMs": 129.5,
+      "parseMs": 106.89999999990687,
+      "readyMs": 1686.6999999999534,
+      "firstRenderMs": 842.6000000000931,
+      "transferBytes": 7592200,
+      "encodedBytes": 7591900,
+      "durationMs": 3005.2999999999993,
+      "frames": 181,
+      "meanFrameMs": 16.666298342541428,
+      "p95FrameMs": 16.799999999999272,
+      "callsRange": [
+        116,
+        118
+      ],
+      "trianglesRange": [
+        178002,
+        178258
+      ],
+      "shadowUpdates": 23,
+      "shadowCallsPerFrame": 9.657458563535911,
+      "shadowPeakCalls": 76,
+      "shadowTrianglesPerFrame": 2619.966850828729,
+      "shadowPeakTriangles": 20618,
+      "materials": 59,
+      "models": 1,
+      "glb": 1
+    },
+    {
+      "name": "API 自动播放 · 前窗",
+      "fps": 60.00331510028182,
+      "calls": 84,
+      "triangles": 149858,
+      "textures": 5,
+      "geometries": 310,
+      "jsHeapBytes": 29136308,
+      "dpr": 1,
+      "shadows": true,
+      "buffer": [
+        932,
+        610
+      ],
+      "bytes": 7591900,
+      "downloadMs": 129.5,
+      "parseMs": 106.89999999990687,
+      "readyMs": 1686.6999999999534,
+      "firstRenderMs": 842.6000000000931,
+      "transferBytes": 7592200,
+      "encodedBytes": 7591900,
+      "durationMs": 3012.5000000001382,
+      "frames": 181,
+      "meanFrameMs": 16.66574585635358,
+      "p95FrameMs": 16.700000000000728,
+      "callsRange": [
+        81,
+        116
+      ],
+      "trianglesRange": [
+        147402,
+        176508
+      ],
+      "shadowUpdates": 22,
+      "shadowCallsPerFrame": 9.237569060773481,
+      "shadowPeakCalls": 76,
+      "shadowTrianglesPerFrame": 2506.0552486187844,
+      "shadowPeakTriangles": 20618,
+      "materials": 61,
+      "models": 1,
+      "glb": 1
+    }
+  ],
+  "cycles": [
+    {
+      "geometries": 308,
+      "materials": 59,
+      "textures": 5,
+      "models": 1,
+      "glb": 1
+    },
+    {
+      "geometries": 308,
+      "materials": 59,
+      "textures": 5,
+      "models": 1,
+      "glb": 1
+    },
+    {
+      "geometries": 308,
+      "materials": 59,
+      "textures": 5,
+      "models": 1,
+      "glb": 1
+    },
+    {
+      "geometries": 308,
+      "materials": 59,
+      "textures": 5,
+      "models": 1,
+      "glb": 1
+    },
+    {
+      "geometries": 308,
+      "materials": 59,
+      "textures": 5,
+      "models": 1,
+      "glb": 1
+    },
+    {
+      "geometries": 308,
+      "materials": 59,
+      "textures": 5,
+      "models": 1,
+      "glb": 1
+    },
+    {
+      "geometries": 308,
+      "materials": 59,
+      "textures": 5,
+      "models": 1,
+      "glb": 1
+    },
+    {
+      "geometries": 308,
+      "materials": 59,
+      "textures": 5,
+      "models": 1,
+      "glb": 1
+    },
+    {
+      "geometries": 308,
+      "materials": 59,
+      "textures": 5,
+      "models": 1,
+      "glb": 1
+    },
+    {
+      "geometries": 308,
+      "materials": 59,
+      "textures": 5,
+      "models": 1,
+      "glb": 1
+    }
+  ],
+  "checks": [
+    "暂停、继续、分步、三次重播、取消后资源一致",
+    "仅 Rack1 局部材质提亮，取消后引用和强度逐项恢复",
+    "两章交替十轮；轨道归还，双环、天线、NewCrisp 显示灯在章内与退出后继续运行",
+    "活动章节卸载、实际 WEBGL_lose_context 和重新加载通过",
+    "桌面 Chrome 触屏视口、减少动态、手动推进"
+  ],
+  "unexpectedRequests": [],
+  "pageErrors": [],
+  "passed": true
+}

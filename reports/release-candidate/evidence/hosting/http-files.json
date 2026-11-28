@@ -1,0 +1,934 @@
+{
+  "results": [
+    {
+      "prefix": "/",
+      "folder": "dist",
+      "routes": [
+        {
+          "path": "/",
+          "status": 200,
+          "title": "简小淼 · 软件作品与 Codeville 小镇",
+          "htmlBytes": 5788
+        },
+        {
+          "path": "/projects/nexus/",
+          "status": 200,
+          "title": "Nexus · Developer API Platform",
+          "htmlBytes": 3421
+        },
+        {
+          "path": "/projects/flowops/",
+          "status": 200,
+          "title": "FlowOps · 企业多租户工单与知识协作平台",
+          "htmlBytes": 3467
+        },
+        {
+          "path": "/projects/newcrisp/",
+          "status": 200,
+          "title": "NewCrisp · 轻量级多租户 Web 在线客服服务台",
+          "htmlBytes": 3494
+        },
+        {
+          "path": "/explore/",
+          "status": 200,
+          "title": "探索 Codeville 小镇",
+          "htmlBytes": 3911
+        },
+        {
+          "path": "/systems/",
+          "status": 200,
+          "title": "Systems Lab · 系统实验室",
+          "htmlBytes": 4901
+        },
+        {
+          "path": "/studio/",
+          "status": 200,
+          "title": "Studio · 个人工作室",
+          "htmlBytes": 3366
+        },
+        {
+          "path": "/creative/",
+          "status": 200,
+          "title": "Creative Lab · 创意收藏",
+          "htmlBytes": 2266
+        }
+      ],
+      "files": [
+        {
+          "relative": "404.html",
+          "size": 1681,
+          "sha256": "d32db9467f2caaffbe321473868095579b6a1b4baeffdcc7b59ded20b8c44501",
+          "type": "text/html",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "THIRD-PARTY-NOTICES.txt",
+          "size": 1450,
+          "sha256": "ac96b859a36cac6adaeeee408e6ea2c9639bb3de25d16ee3b0fa7a8a4bd329f7",
+          "type": "application/octet-stream",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "assets/index-CyTaSyOO.js",
+          "size": 5266,
+          "sha256": "4678984dc293ed68174eb223606b9f6faafcd4477af1d48de6b9b38ea3ab2b97",
+          "type": "application/javascript",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "assets/index-jjqQ5M29.css",
+          "size": 7679,
+          "sha256": "9a49a595a06d8bc0c2005f34dbf65f68f647131acda2d15c434cc319742bd265",
+          "type": "text/css",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "assets/meshopt_decoder.module-BkEQAzru.js",
+          "size": 22098,
+          "sha256": "faadf24c3ffbc0169b6d6b40e66e248895041532a4bfd544e728422e51be5097",
+          "type": "application/javascript",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "assets/mount-CLhIg-Xp.css",
+          "size": 21115,
+          "sha256": "31c7aa3dc5758f5e50f8f06a97c0319d060d33653acc59cffba913380a548c46",
+          "type": "text/css",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "assets/mount-CRdBgHPR.js",
+          "size": 265035,
+          "sha256": "269de6bbb43fbc829b48a355b7e8d3caf350b3ae39ff2b18521d71a7ec00d578",
+          "type": "application/javascript",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "assets/three-Cp5cabWI.js",
+          "size": 532879,
+          "sha256": "147e834f7dd8aecf07e3fef648f2c0b7bd9f4586e4ad1e07acb2e8430d6ec2fc",
+          "type": "application/javascript",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "creative/index.html",
+          "size": 2266,
+          "sha256": "576ecd860e2c8320d9e9fabaf332f6e7ddda7284cb7a2aceb68807bf00b3f5fa",
+          "type": "text/html",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "explore/index.html",
+          "size": 3911,
+          "sha256": "879967490a4f2128e3549a8e73bad5179e96cb7bc434494569977145a3d5cc9f",
+          "type": "text/html",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "favicon.svg",
+          "size": 303,
+          "sha256": "5bde59f6320b83abc4d3da92b527097034cafae38e2bb4b8256e048badd3b8b6",
+          "type": "image/svg+xml",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "index.html",
+          "size": 5788,
+          "sha256": "dac351066e7c69e9e9d43d9bc92b944ee77df505da6aae236e4846fc645eceba",
+          "type": "text/html",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/FO.webp",
+          "size": 200320,
+          "sha256": "445693357d6781c2ee58099a387b612eaaa1fea021bc9129877ddaed211d04af",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/NC.webp",
+          "size": 200682,
+          "sha256": "e41b835847e632082eac5593b216d4bcf3a67f078ab268b8ada5fa496e629be4",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/NX.webp",
+          "size": 175846,
+          "sha256": "6234ab3ba525dba898892ccf58f69a148752f341b19ad9eff7808113fad67d94",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/ST.webp",
+          "size": 204000,
+          "sha256": "e394d2e29a44bf379f8e81f51603633275d16d78f277402ef398790a1dce8617",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/api-response.webp",
+          "size": 85720,
+          "sha256": "9da1832ba17645cbfd910e862103517e03e2dccf0ee62f5f925e8d0a0cfe2ee0",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/chat-normal-panels.webp",
+          "size": 69742,
+          "sha256": "026f1204f8043c04c6c1f7800cf7a75441903b329aca57ed9187e0d01e1be9ef",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/collection.webp",
+          "size": 57224,
+          "sha256": "243a6c249ae3d13a42feaddcd24285389d5b88d5bad87e7a0202a0d12063df79",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/day-1280.webp",
+          "size": 106358,
+          "sha256": "2978f24281cd5e6ea834e36725e87c73c8dc8fa625cc0040b07dc3e300d091c9",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/day-1800.webp",
+          "size": 165752,
+          "sha256": "e7df0a1aa1088735dd921a640689edb6197b95e27c3345b48d7bbcc70a62367c",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/day-480.webp",
+          "size": 26390,
+          "sha256": "61f5ec5271b82e16a8bae822f36ca288e79d1b10685ca602ccaa099f82de8053",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/day-800.webp",
+          "size": 55814,
+          "sha256": "12aa9e7aa513e9b328b948e0f0c53b300421130629868982550055af310cb876",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/day.jpg",
+          "size": 259666,
+          "sha256": "01483905a27a7aaef00dbc29dc68a3ca565dbed75629102f326fb2d6d74c01d0",
+          "type": "image/jpeg",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/globe.webp",
+          "size": 88718,
+          "sha256": "364462d9a840f1500bbf02ea9d41d918ac6a9ae32a96e0737b6be0c24c6c4978",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/inside.webp",
+          "size": 157246,
+          "sha256": "d82047fba3d11937bdf0919aa005d02602b6c9ec35b1a560b4a6a94962943e1a",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/market.webp",
+          "size": 21026,
+          "sha256": "c9de30646a931b03ed4fcd9e0a4d233298050fd745fa0640ebcec62df772eb8c",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/night.webp",
+          "size": 147306,
+          "sha256": "b148c46d55f1025e42fa2c2a511b465caede91440fa298517458699266af7c8d",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/quay.webp",
+          "size": 104548,
+          "sha256": "730d768486e5d6b08195eec00bdb26052ab13012876969fddfbc1ca2380c23af",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/residential.webp",
+          "size": 31052,
+          "sha256": "d9a2eeb4fc17ddd21250f5cec723fb1d924ad1710b481cf8416c0c4db6e8039a",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/ticket-delivery.webp",
+          "size": 45352,
+          "sha256": "65f431d9ca97a0437a24084a9ed5cbbe1f6802ee3974bafd2174b13a51367e9d",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "projects/flowops/index.html",
+          "size": 3467,
+          "sha256": "8c0eecc77a47f03cd17efdfa54eaba837df5d2cdec20333a1062621968839974",
+          "type": "text/html",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "projects/newcrisp/index.html",
+          "size": 3494,
+          "sha256": "d849d1456d7cf6ea0dc9a412ad62c2f65ec85ddbc237c553705bbd43c6b76c69",
+          "type": "text/html",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "projects/nexus/index.html",
+          "size": 3421,
+          "sha256": "3378eddbc4dabb66b190ebf86c63266f0e26c09ef1c5c59652d9122fabf5aaca",
+          "type": "text/html",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "studio/index.html",
+          "size": 3366,
+          "sha256": "f12aaa982f4fecdc64781f95e723f843482d75b5255f75e422ec058cdb9adddf",
+          "type": "text/html",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "systems/index.html",
+          "size": 4901,
+          "sha256": "b3d31d7bab83ee70375216b2b655a68e056bbec91e3ba4dde1d9b3489fe775f0",
+          "type": "text/html",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "town-6c2fa5d037a0/FO.jpg",
+          "size": 15172,
+          "sha256": "2911e5ae24f6dca3d0d228e726f6c18a6455aad877b6d7135c840b52f1b77a2a",
+          "type": "image/jpeg",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "town-6c2fa5d037a0/NC.jpg",
+          "size": 14469,
+          "sha256": "eb8354a2b86e007e58640bff72b14640c775319cd0530d1bba8850aa66e5b122",
+          "type": "image/jpeg",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "town-6c2fa5d037a0/NX.jpg",
+          "size": 14537,
+          "sha256": "c5710c75f1e6e9022ce4c4414315a9b411e12f67ea5ebf9bd8d38fb1fd931abc",
+          "type": "image/jpeg",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "town-6c2fa5d037a0/ST.jpg",
+          "size": 17042,
+          "sha256": "fa299a2663c2632f204121f6dd9ae44a5ff4553f600f65d82e2a0246c46c6a28",
+          "type": "image/jpeg",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "town-6c2fa5d037a0/Town.glb",
+          "size": 13812376,
+          "sha256": "9b8ad0d3bc037ad4c2a7d7ee7d4e2e8e51adbcc1b3edf470d9de629e38db6f06",
+          "type": "model/gltf-binary",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "town-6c2fa5d037a0/Town.meshopt.glb",
+          "size": 7591900,
+          "sha256": "2d85eb6cc44b844c5bb799969da215dbb8d3f0f88f0fb89b9e83af4ed5de148a",
+          "type": "model/gltf-binary",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "town-6c2fa5d037a0/layout.json",
+          "size": 56322,
+          "sha256": "2c53775c7ca6026376ac71a14065704fc88ac70f744998cbac0d25400405a3bf",
+          "type": "application/json",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "town-6c2fa5d037a0/poster.jpg",
+          "size": 154917,
+          "sha256": "8c2adf4a326df4898ea5cdd600d7f3a29c1ee9a271713158505f8c926c003f98",
+          "type": "image/jpeg",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        }
+      ],
+      "missing": [
+        {
+          "path": "/unknown-route/",
+          "status": 404,
+          "sha256": "d32db9467f2caaffbe321473868095579b6a1b4baeffdcc7b59ded20b8c44501"
+        },
+        {
+          "path": "/nested/example/unknown/",
+          "status": 404,
+          "sha256": "d32db9467f2caaffbe321473868095579b6a1b4baeffdcc7b59ded20b8c44501"
+        }
+      ],
+      "server": "nginx/1.30.8"
+    },
+    {
+      "prefix": "/portal/",
+      "folder": "dist-pages",
+      "routes": [
+        {
+          "path": "/portal/",
+          "status": 200,
+          "title": "简小淼 · 软件作品与 Codeville 小镇",
+          "htmlBytes": 6033
+        },
+        {
+          "path": "/portal/projects/nexus/",
+          "status": 200,
+          "title": "Nexus · Developer API Platform",
+          "htmlBytes": 3554
+        },
+        {
+          "path": "/portal/projects/flowops/",
+          "status": 200,
+          "title": "FlowOps · 企业多租户工单与知识协作平台",
+          "htmlBytes": 3600
+        },
+        {
+          "path": "/portal/projects/newcrisp/",
+          "status": 200,
+          "title": "NewCrisp · 轻量级多租户 Web 在线客服服务台",
+          "htmlBytes": 3627
+        },
+        {
+          "path": "/portal/explore/",
+          "status": 200,
+          "title": "探索 Codeville 小镇",
+          "htmlBytes": 4156
+        },
+        {
+          "path": "/portal/systems/",
+          "status": 200,
+          "title": "Systems Lab · 系统实验室",
+          "htmlBytes": 5069
+        },
+        {
+          "path": "/portal/studio/",
+          "status": 200,
+          "title": "Studio · 个人工作室",
+          "htmlBytes": 3555
+        },
+        {
+          "path": "/portal/creative/",
+          "status": 200,
+          "title": "Creative Lab · 创意收藏",
+          "htmlBytes": 2392
+        }
+      ],
+      "files": [
+        {
+          "relative": "404.html",
+          "size": 1793,
+          "sha256": "d01148e6858b9780037cdfef1cf9780e3c8623a6a0f3f26cbe619a8303209281",
+          "type": "text/html",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "THIRD-PARTY-NOTICES.txt",
+          "size": 1450,
+          "sha256": "ac96b859a36cac6adaeeee408e6ea2c9639bb3de25d16ee3b0fa7a8a4bd329f7",
+          "type": "application/octet-stream",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "assets/index-Cko0OJn9.js",
+          "size": 5280,
+          "sha256": "e0fae20c63388ea53a0b5e6ad06dd71ef035efc0249e86799561372e91a1f850",
+          "type": "application/javascript",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "assets/index-jjqQ5M29.css",
+          "size": 7679,
+          "sha256": "9a49a595a06d8bc0c2005f34dbf65f68f647131acda2d15c434cc319742bd265",
+          "type": "text/css",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "assets/meshopt_decoder.module-BkEQAzru.js",
+          "size": 22098,
+          "sha256": "faadf24c3ffbc0169b6d6b40e66e248895041532a4bfd544e728422e51be5097",
+          "type": "application/javascript",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "assets/mount-CLhIg-Xp.css",
+          "size": 21115,
+          "sha256": "31c7aa3dc5758f5e50f8f06a97c0319d060d33653acc59cffba913380a548c46",
+          "type": "text/css",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "assets/mount-CqriKDav.js",
+          "size": 265049,
+          "sha256": "bcb13abe778a48d6393bcc7a65bda5b18c798d6f606f13b25152f16e54104387",
+          "type": "application/javascript",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "assets/three-Cp5cabWI.js",
+          "size": 532879,
+          "sha256": "147e834f7dd8aecf07e3fef648f2c0b7bd9f4586e4ad1e07acb2e8430d6ec2fc",
+          "type": "application/javascript",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "creative/index.html",
+          "size": 2392,
+          "sha256": "c68c890f60e0f2bf1aa7dd267e467502ee9ac0a92dc6a619f24894bf5d98aa4a",
+          "type": "text/html",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "explore/index.html",
+          "size": 4156,
+          "sha256": "0a896215a63059bd8ce888213da1bcb0204681b3f7dc7bb39b8efdbbb9778373",
+          "type": "text/html",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "favicon.svg",
+          "size": 303,
+          "sha256": "5bde59f6320b83abc4d3da92b527097034cafae38e2bb4b8256e048badd3b8b6",
+          "type": "image/svg+xml",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "index.html",
+          "size": 6033,
+          "sha256": "7457f9b25c566509661dda6723a0ddb693b6b2e21a783a9d598c42600dfe762e",
+          "type": "text/html",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/FO.webp",
+          "size": 200320,
+          "sha256": "445693357d6781c2ee58099a387b612eaaa1fea021bc9129877ddaed211d04af",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/NC.webp",
+          "size": 200682,
+          "sha256": "e41b835847e632082eac5593b216d4bcf3a67f078ab268b8ada5fa496e629be4",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/NX.webp",
+          "size": 175846,
+          "sha256": "6234ab3ba525dba898892ccf58f69a148752f341b19ad9eff7808113fad67d94",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/ST.webp",
+          "size": 204000,
+          "sha256": "e394d2e29a44bf379f8e81f51603633275d16d78f277402ef398790a1dce8617",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/api-response.webp",
+          "size": 85720,
+          "sha256": "9da1832ba17645cbfd910e862103517e03e2dccf0ee62f5f925e8d0a0cfe2ee0",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/chat-normal-panels.webp",
+          "size": 69742,
+          "sha256": "026f1204f8043c04c6c1f7800cf7a75441903b329aca57ed9187e0d01e1be9ef",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/collection.webp",
+          "size": 57224,
+          "sha256": "243a6c249ae3d13a42feaddcd24285389d5b88d5bad87e7a0202a0d12063df79",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/day-1280.webp",
+          "size": 106358,
+          "sha256": "2978f24281cd5e6ea834e36725e87c73c8dc8fa625cc0040b07dc3e300d091c9",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/day-1800.webp",
+          "size": 165752,
+          "sha256": "e7df0a1aa1088735dd921a640689edb6197b95e27c3345b48d7bbcc70a62367c",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/day-480.webp",
+          "size": 26390,
+          "sha256": "61f5ec5271b82e16a8bae822f36ca288e79d1b10685ca602ccaa099f82de8053",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/day-800.webp",
+          "size": 55814,
+          "sha256": "12aa9e7aa513e9b328b948e0f0c53b300421130629868982550055af310cb876",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/day.jpg",
+          "size": 259666,
+          "sha256": "01483905a27a7aaef00dbc29dc68a3ca565dbed75629102f326fb2d6d74c01d0",
+          "type": "image/jpeg",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/globe.webp",
+          "size": 88718,
+          "sha256": "364462d9a840f1500bbf02ea9d41d918ac6a9ae32a96e0737b6be0c24c6c4978",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/inside.webp",
+          "size": 157246,
+          "sha256": "d82047fba3d11937bdf0919aa005d02602b6c9ec35b1a560b4a6a94962943e1a",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/market.webp",
+          "size": 21026,
+          "sha256": "c9de30646a931b03ed4fcd9e0a4d233298050fd745fa0640ebcec62df772eb8c",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/night.webp",
+          "size": 147306,
+          "sha256": "b148c46d55f1025e42fa2c2a511b465caede91440fa298517458699266af7c8d",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/quay.webp",
+          "size": 104548,
+          "sha256": "730d768486e5d6b08195eec00bdb26052ab13012876969fddfbc1ca2380c23af",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/residential.webp",
+          "size": 31052,
+          "sha256": "d9a2eeb4fc17ddd21250f5cec723fb1d924ad1710b481cf8416c0c4db6e8039a",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "media-c0a27766cbce/ticket-delivery.webp",
+          "size": 45352,
+          "sha256": "65f431d9ca97a0437a24084a9ed5cbbe1f6802ee3974bafd2174b13a51367e9d",
+          "type": "image/webp",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "projects/flowops/index.html",
+          "size": 3600,
+          "sha256": "a089beea05e25df4ee73d7ee3a59fec2c9d232f90dc1cc7f32ac30e8529dd351",
+          "type": "text/html",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "projects/newcrisp/index.html",
+          "size": 3627,
+          "sha256": "589857b7a0a0f4930e2a969fa20511ebc9d443ccdfa61f2fddbeeb0ffdf73d83",
+          "type": "text/html",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "projects/nexus/index.html",
+          "size": 3554,
+          "sha256": "3295b091f1c467e47134e464cb9dbb40abb23192407d246cd6662aaef8d89785",
+          "type": "text/html",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "studio/index.html",
+          "size": 3555,
+          "sha256": "42d01f904f88b082dc27e696d92e08275823e3e325097731fbf3e889749081c9",
+          "type": "text/html",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "systems/index.html",
+          "size": 5069,
+          "sha256": "bd68862ffe3338474874c7090dd46dfc345caf9e50503c238407d2473c2a9d00",
+          "type": "text/html",
+          "cache": "no-cache",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "town-6c2fa5d037a0/FO.jpg",
+          "size": 15172,
+          "sha256": "2911e5ae24f6dca3d0d228e726f6c18a6455aad877b6d7135c840b52f1b77a2a",
+          "type": "image/jpeg",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "town-6c2fa5d037a0/NC.jpg",
+          "size": 14469,
+          "sha256": "eb8354a2b86e007e58640bff72b14640c775319cd0530d1bba8850aa66e5b122",
+          "type": "image/jpeg",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "town-6c2fa5d037a0/NX.jpg",
+          "size": 14537,
+          "sha256": "c5710c75f1e6e9022ce4c4414315a9b411e12f67ea5ebf9bd8d38fb1fd931abc",
+          "type": "image/jpeg",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "town-6c2fa5d037a0/ST.jpg",
+          "size": 17042,
+          "sha256": "fa299a2663c2632f204121f6dd9ae44a5ff4553f600f65d82e2a0246c46c6a28",
+          "type": "image/jpeg",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "town-6c2fa5d037a0/Town.glb",
+          "size": 13812376,
+          "sha256": "9b8ad0d3bc037ad4c2a7d7ee7d4e2e8e51adbcc1b3edf470d9de629e38db6f06",
+          "type": "model/gltf-binary",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "town-6c2fa5d037a0/Town.meshopt.glb",
+          "size": 7591900,
+          "sha256": "2d85eb6cc44b844c5bb799969da215dbb8d3f0f88f0fb89b9e83af4ed5de148a",
+          "type": "model/gltf-binary",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "town-6c2fa5d037a0/layout.json",
+          "size": 56322,
+          "sha256": "2c53775c7ca6026376ac71a14065704fc88ac70f744998cbac0d25400405a3bf",
+          "type": "application/json",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        },
+        {
+          "relative": "town-6c2fa5d037a0/poster.jpg",
+          "size": 154917,
+          "sha256": "8c2adf4a326df4898ea5cdd600d7f3a29c1ee9a271713158505f8c926c003f98",
+          "type": "image/jpeg",
+          "cache": "public, max-age=31536000, immutable",
+          "hasEtag": true,
+          "conditional": 304
+        }
+      ],
+      "missing": [
+        {
+          "path": "/portal/unknown-route/",
+          "status": 404,
+          "sha256": "d01148e6858b9780037cdfef1cf9780e3c8623a6a0f3f26cbe619a8303209281"
+        },
+        {
+          "path": "/portal/nested/example/unknown/",
+          "status": 404,
+          "sha256": "d01148e6858b9780037cdfef1cf9780e3c8623a6a0f3f26cbe619a8303209281"
+        }
+      ],
+      "server": "nginx/1.30.8"
+    }
+  ]
+}

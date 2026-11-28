@@ -5,16 +5,19 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 5175",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vue-tsc --noEmit && node scripts/build.mjs",
     "preview": "vite preview --host 127.0.0.1 --port 4175"
   },
   "dependencies": {
-    "vue": "^3.5.13"
+    "vue": "^3.5.13",
+    "three": "0.180.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
     "typescript": "^5.7.3",
     "vite": "^6.1.0",
-    "vue-tsc": "^2.2.0"
+    "vue-tsc": "^2.2.0",
+    "@types/three": "0.180.0",
+    "playwright": "1.63.0"
   }
 }
