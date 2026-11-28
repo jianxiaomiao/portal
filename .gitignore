@@ -6,3 +6,4 @@ dist
 dist-check/
 dist-pages/
 dist-rollback-*/
+dist-ecs/

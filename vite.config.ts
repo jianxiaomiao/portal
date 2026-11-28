@@ -92,6 +92,7 @@ export default defineConfig({
     __MEDIA_DIR__: JSON.stringify(media.prefix),
     __TOWN_DIR__: JSON.stringify(town.prefix),
     __CV_INSPECT__: inspect,
+    __PORTAL_DOMESTIC__: process.env.PORTAL_SITE === 'cn',
   },
   build: {
     outDir: process.env.PORTAL_OUT || 'dist',

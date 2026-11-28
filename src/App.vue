@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { PROJECTS, SITE_PROFILE } from './config/projects'
 import { buildings, chapters, districts, href, media, spots } from './catalog'
-const props = defineProps<{ route: string }>()
+const props = defineProps<{ route: string; domestic?: boolean }>()
 const project = PROJECTS.find((p) => props.route === '/projects/' + p.id + '/')
 const chapter = chapters.find((c) => c.project === project?.name)
 const nav = [
@@ -427,6 +427,7 @@ const daySet = [480, 800, 1280, 1800]
       <div class="shell">
         <a class="signature" :href="href('/')">简小淼 <em>Studio</em></a
         ><a :href="SITE_PROFILE.githubProfile">GitHub ↗</a>
+        <a v-if="props.domestic" href="https://beian.miit.gov.cn/">蜀ICP备2026071039号-1</a>
       </div>
     </footer>
   </div>

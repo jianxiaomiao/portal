@@ -201,14 +201,12 @@ aside {
 }
 .view-chip,
 .controls,
-.compass,
 .tooltip,
 .pin {
   position: absolute;
 }
 .view-chip,
-.controls,
-.compass {
+.controls {
   background: #fffdf4e8;
   border: 1px solid #d3d7c9;
   box-shadow: 0 2px 9px #2837290c;
@@ -232,25 +230,6 @@ aside {
   height: 7px;
   background: #638766;
   border-radius: 50%;
-}
-.compass {
-  right: 17px;
-  top: 16px;
-  width: 35px;
-  height: 48px;
-  border-radius: 22px;
-  text-align: center;
-  pointer-events: none;
-  padding-top: 5px;
-}
-.compass span {
-  font:
-    bold 9px Georgia,
-    serif;
-}
-.compass div {
-  line-height: 15px;
-  font-size: 18px;
 }
 .controls {
   bottom: 16px;
@@ -720,10 +699,6 @@ ul {
     left: 10px;
     top: 10px;
   }
-  .compass {
-    right: 10px;
-    top: 10px;
-  }
   .perf {
     top: 50px;
   }
@@ -888,4 +863,4 @@ ul {
 .cv-root .touch-shield,.cv-root .touch-toggle{display:none}.cv-root .model-choice{font-size:12px;color:inherit}
 .cv-root .compact>header,.cv-root .compact .page-title,.cv-root .compact aside,.cv-root .compact .view-chip,.cv-root .compact .compass,.cv-root .compact .vehicle-view,.cv-root .compact .map-angles,.cv-root .compact .tooltip{display:none}
 .world-frame .cv-root,.cv-root .compact,.cv-root .compact main,.cv-root .compact .workspace,.cv-root .compact .map-stage{width:100%;height:100%;margin:0;min-height:0;max-height:none}.cv-root .compact .workspace{display:block}.cv-root .compact .map-stage{border:0;border-radius:0}
-@media(pointer:coarse){.cv-root .touch-shield{display:block;position:absolute;inset:0;z-index:1;touch-action:pan-y}.cv-root .touch-toggle{display:block;position:absolute;right:10px;top:48px;z-index:6;background:#fffdf4;border:1px solid #b7c5ad;border-radius:6px;padding:6px 10px;min-height:44px;color:#193c31}.cv-root .map-stage:not(.touch-enabled) canvas{pointer-events:none;touch-action:pan-y!important}.cv-root .map-stage .pin,.cv-root .map-stage .controls,.cv-root .map-stage .skip-entry,.cv-root .map-stage .vehicle-view,.cv-root .map-stage .map-angles{z-index:3}}
+@media(pointer:coarse){.cv-root .touch-shield{display:block;position:absolute;inset:0;z-index:1;touch-action:pan-y}.cv-root .touch-toggle{display:block;position:absolute;right:10px;top:76px;z-index:6;background:#fffdf4;border:1px solid #b7c5ad;border-radius:6px;padding:6px 10px;min-height:44px;color:#193c31}.cv-root .map-stage:not(.touch-enabled) canvas{pointer-events:none;touch-action:pan-y!important}.cv-root .map-stage .pin,.cv-root .map-stage .controls,.cv-root .map-stage .skip-entry,.cv-root .map-stage .vehicle-view,.cv-root .map-stage .map-angles{z-index:3}}

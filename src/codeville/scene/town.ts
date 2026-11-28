@@ -5,6 +5,9 @@ import type { Options } from '../api-request/story'
 import { Journey } from '../journey/director'
 import { prepareDigests, type Scenario } from '../journey/story'
 import { MotionDirector } from './motion/director'
+import { prepareWaterway } from './waterway'
+import { CloudSea } from './cloud-sea/index.js'
+import { Neighborhood } from './neighborhood'
 import { Atmosphere, type Theme } from './atmosphere'
 import {
   Scene,
@@ -106,6 +109,11 @@ export class Town {
   private env?: WebGLRenderTarget
   private shadow = new TownShadows()
   private sun = new DirectionalLight(0xffefd9, 2.65)
+  private clouds?: CloudSea
+  private neighborhood?: Neighborhood
+  private slowSeconds = 0
+  private slowFrames = 0
+  private shedScenery = false
   private floor: Mesh<PlaneGeometry, ShaderMaterial>
   private resize: ResizeObserver
   private ready = false
@@ -162,14 +170,27 @@ export class Town {
     this.renderer.setPixelRatio(Math.min(devicePixelRatio, low ? 1 : 1.65))
     this.renderer.setSize(w, h, false)
     this.shadow.enabled = !low
+    this.clouds?.setDetail(low || this.shedScenery ? 0 : this.quality === 'high' ? 2 : 1)
+    this.syncNeighborhood()
     this.shadow.dirty = true
     this.rig?.resize(w, h)
   }
+  private syncNeighborhood() {
+    const enabled = this.shadow.enabled && !this.shedScenery
+    if (!this.neighborhood && enabled && this.rig) {
+      this.neighborhood = new Neighborhood()
+      this.scene.add(this.neighborhood.group)
+    }
+    if (this.neighborhood) this.neighborhood.group.visible = enabled && !this.chapter && !this.selected
+  }
   setTheme(theme: Theme) {
+    this.clouds?.setTheme(theme)
     this.atmosphere.apply(theme)
     this.events.status()
   }
   setQuality(q: Quality) {
+    this.shedScenery = false
+    this.slowSeconds = this.slowFrames = 0
     this.quality = q
     this.resizeToCanvas()
     this.events.status()
@@ -200,6 +221,7 @@ export class Town {
     data.scene.traverse((o) => {
       if (o instanceof Mesh) meshes.push(o)
     })
+    prepareWaterway(meshes, this.atmosphere.time, this.atmosphere.night)
     this.shadow.attach(meshes)
     this.motion.finishShaders()
     this.atmosphere.finish(data.registry)
@@ -213,12 +235,16 @@ export class Town {
       room.dispose()
       pm.dispose()
     }
+    const cloudStart = performance.now()
+    this.clouds = new CloudSea(this.atmosphere.theme, this.sun.position, meshes, this.renderer)
+    this.scene.add(this.clouds.group)
     this.rig = new CameraRig(this.canvas, data.layout)
     this.studio = new Studio(data.layout, data.registry)
     this.resizeToCanvas()
+    this.stats.timing.cloudInitMs = performance.now() - cloudStart
     const first = performance.now()
     this.shadow.render(this.renderer, this.scene, this.floor)
-    this.renderer.render(this.scene, this.rig.camera)
+    this.clouds!.render(this.renderer, this.scene, this.rig.camera)
     const entry = performance
       .getEntriesByName(new URL(assets + this.modelFile, location.href).href)
       .at(-1) as PerformanceResourceTiming | undefined
@@ -307,13 +333,28 @@ export class Town {
       motion.dirty = false
       this.lastShadow = now
     }
+    const scenery = this.neighborhood
+    if (scenery) {
+      scenery.group.visible = this.shadow.enabled && !this.shedScenery && !this.chapter && !this.selected
+      if (this.quality === 'auto' && scenery.group.visible && !document.hidden && dt > 0) {
+        this.slowSeconds += Math.min(dt,250) / 1000
+        this.slowFrames++
+        if (this.slowSeconds >= 4) {
+          this.shedScenery = this.slowFrames / this.slowSeconds < 24
+          this.slowSeconds = this.slowFrames = 0
+          if (this.shedScenery) { scenery.group.visible = false; this.clouds?.setDetail(0) }
+        }
+      }
+      scenery.update(dt/1000,motion.active && motion.level > 0)
+    }
+    this.clouds?.step(dt / 1000, motion.active && motion.level > 0)
     this.atmosphere.step(dt/1000,motion.active)
     this.rig.follow(motion.tracks.vehicle.rest.node.position)
     this.rig.update(now)
     this.chat?.faceCamera()
     if (this.studio.step(Math.min(0.15, dt / 1000))) this.shadow.dirty = true
     this.shadow.render(this.renderer, this.scene, this.floor)
-    this.renderer.render(this.scene, this.rig.camera)
+    this.clouds!.render(this.renderer, this.scene, this.rig.camera)
     this.stats.record(dt, now, this.shadow.calls, this.shadow.triangles)
     if (this.studio.inside && this.rig.view !== 'globe')
       this.events.pins(
@@ -382,6 +423,8 @@ export class Town {
     this.rig?.dispose()
     this.stats.dispose()
     this.endJourney()
+    this.clouds?.dispose()
+    this.neighborhood?.dispose()
     this.motion?.dispose()
     if (this.registry) disposeModel(this.registry.model)
     this.floor.geometry.dispose()

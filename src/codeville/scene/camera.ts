@@ -7,7 +7,7 @@ export type View =
   Place | TownView | 'route' | 'exploded' | 'inside' | 'globe' | 'vehicle' | 'conveyor' | 'nx-window' | 'chat-link' | 'chat-intake' | 'chat-desk'
 const v = (x: number, y: number, z: number) => new Vector3(x, y, z)
 export class CameraRig {
-  camera = new OrthographicCamera(-1, 1, 1, -1, 0.1, 250)
+  camera = new OrthographicCamera(-1, 1, 1, -1, 0.1, 3400)
   controls: OrbitControls
   view: View = 'home'
   aspect = 1
@@ -36,8 +36,8 @@ export class CameraRig {
       dampingFactor: 0.1,
       enablePan: false,
       minPolarAngle: 0.16,
-      maxPolarAngle: 1.12,
-      minZoom: 0.55,
+      maxPolarAngle: 1.49,
+      minZoom: 0.12,
       maxZoom: 3.1,
       rotateSpeed: 0.62,
       zoomSpeed: 0.9,
@@ -226,6 +226,8 @@ export class CameraRig {
     this.camera.updateProjectionMatrix()
     this.camera.lookAt(this.controls.target)
     this.camera.updateMatrixWorld()
+    // Flights move the camera directly while OrbitControls input is disabled.
+    this.controls.dispatchEvent({ type: 'change' })
     if (u >= 1) {
       this.entering = false
       this.flight = undefined

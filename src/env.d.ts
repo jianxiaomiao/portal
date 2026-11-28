@@ -2,3 +2,4 @@
 declare const __MEDIA_DIR__: string
 declare const __TOWN_DIR__: string
 declare const __CV_INSPECT__: boolean
+declare const __PORTAL_DOMESTIC__: boolean

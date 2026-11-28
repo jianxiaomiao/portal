@@ -1,7 +1,7 @@
 // Three.js world space in metres, Y up. Each offset is relative to its target.
 type Shot = { target: [number, number, number]; offset: [number, number, number]; width: number; height: number }
 export const townViews = {
-  home: { target: [-0.8, 0.6, -2.1], offset: [13, 48, 47], width: 60.8, height: 37 },
+  home: { target: [-0.8, 0.6, -2.1], offset: [13, 48, 47], width: 72, height: 45 },
   portrait: { target: [0.06, 0.31, -3.78], offset: [54.7, 58, 5.75], width: 43.3, height: 46 },
   plan: { target: [-0.53, 0.15, -2.9], offset: [0, 66, 0.001], width: 59, height: 41 },
   reverse: { target: [-0.7, 0.6, -2.1], offset: [-15, 45, -50], width: 60, height: 35 },
