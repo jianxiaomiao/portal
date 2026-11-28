@@ -47,7 +47,7 @@ export const PROJECTS: ProjectItem[] = [
     subtitle: 'Developer API Platform',
     tagline:
       '模块化单体开发者 API 平台，统一管理用户会话、Application、API Key、配额限速、用量统计、异步截图任务与 Webhook，覆盖 Web、Electron 桌面端与 Android 移动端。',
-    liveUrl: '', // 上线验收通过后填入 'https://nexus.myxiaomiao.com/'
+    liveUrl: 'https://nexus.myxiaomiao.com/',
     repoUrl: 'https://github.com/jianxiaomiao/Nexus',
     highlights: [
       'JWT + Refresh 令牌轮换与多标签页协调，管理与机器调用双身份边界',
