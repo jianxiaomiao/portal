@@ -1,0 +1,80 @@
+{
+  "samples": [
+    {
+      "sec": 2,
+      "stage": "unsupported",
+      "heading": "静态总览\n当前浏览器未能创建 WebGL 2 场景。可查看下方静态总览，或在支持 WebGL 2 的浏览器中重试。\n重新加载\n",
+      "staticLink": true,
+      "assets": []
+    },
+    {
+      "sec": 30,
+      "stage": "unsupported",
+      "heading": "静态总览\n当前浏览器未能创建 WebGL 2 场景。可查看下方静态总览，或在支持 WebGL 2 的浏览器中重试。\n重新加载\n",
+      "staticLink": true,
+      "assets": []
+    }
+  ],
+  "errors": [
+    "Codeville renderer initialization failed TypeError: null is not an object (evaluating 'i.getShaderPrecisionFormat(i.VERTEX_SHADER,i.HIGH_FLOAT).precision')"
+  ],
+  "visibility": [],
+  "webgl2": {
+    "created": true,
+    "lost": true,
+    "version": null,
+    "rgba": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "error": 37442
+  },
+  "pageChecks": {
+    "首页": {
+      "ok": true,
+      "value": "简小淼 · 软件作品与 Codeville 小镇"
+    },
+    "软件详情": {
+      "ok": true,
+      "value": [
+        "Nexus · Developer API Platform",
+        "FlowOps · 企业多租户工单与知识协作平台",
+        "NewCrisp · 轻量级多租户 Web 在线客服服务台"
+      ]
+    },
+    "昼夜切换": {
+      "ok": true,
+      "value": [
+        "night",
+        "day"
+      ]
+    },
+    "生产默认模型": {
+      "ok": false,
+      "error": "Error: 等待页面状态超时"
+    },
+    "压缩失败回退": {
+      "ok": false,
+      "error": "Error: 等待页面状态超时"
+    },
+    "手选普通模型": {
+      "ok": false,
+      "error": "Error: 等待页面状态超时"
+    },
+    "分步-api": {
+      "ok": false,
+      "error": "Error: 等待页面状态超时"
+    },
+    "分步-ticket": {
+      "ok": false,
+      "error": "Error: 等待页面状态超时"
+    },
+    "分步-chat": {
+      "ok": false,
+      "error": "Error: 等待页面状态超时"
+    }
+  },
+  "environment": "macOS 26.7.3, Safari 26.6.2"
+}

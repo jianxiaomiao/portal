@@ -1,0 +1,35 @@
+{
+  "cycles": [
+    {
+      "pending": 1,
+      "canvas": 13,
+      "previousCanvas": 0,
+      "global": 20
+    },
+    {
+      "pending": 1,
+      "canvas": 13,
+      "previousCanvas": 0,
+      "global": 20
+    },
+    {
+      "pending": 1,
+      "canvas": 13,
+      "previousCanvas": 0,
+      "global": 20
+    }
+  ],
+  "passed": true,
+  "before": {
+    "pending": 1,
+    "canvas": 13,
+    "previousCanvas": 0,
+    "global": 20
+  },
+  "released": {
+    "pending": 0,
+    "canvas": 0,
+    "previousCanvas": 0,
+    "global": 18
+  }
+}

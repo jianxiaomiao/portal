@@ -1,0 +1,62 @@
+{
+  "testedAt": "2026-11-28",
+  "base": "/explore/",
+  "node": "v24.22.3",
+  "browser": "158.0.8127.88",
+  "finalResults": {
+    "support-chat-state": {
+      "name": "support-chat-state",
+      "exitCode": 0,
+      "seconds": 0.391,
+      "source": "suite-all.json"
+    },
+    "phase8-entry": {
+      "name": "phase8-entry",
+      "exitCode": 0,
+      "seconds": 14.428,
+      "source": "suite-phase8-entry_town-views_render-contracts_support-chat-lifecycle.json"
+    },
+    "render-contracts": {
+      "name": "render-contracts",
+      "exitCode": 0,
+      "seconds": 32.038,
+      "source": "suite-phase8-entry_town-views_render-contracts_support-chat-lifecycle.json"
+    },
+    "town-views": {
+      "name": "town-views",
+      "exitCode": 0,
+      "seconds": 39.173,
+      "source": "suite-phase8-entry_town-views_render-contracts_support-chat-lifecycle.json"
+    },
+    "api-request": {
+      "name": "api-request",
+      "exitCode": 0,
+      "seconds": 76.592,
+      "source": "suite-all.json"
+    },
+    "journey-branches": {
+      "name": "journey-branches",
+      "exitCode": 0,
+      "seconds": 39.145,
+      "source": "suite-all.json"
+    },
+    "support-chat-lifecycle": {
+      "name": "support-chat-lifecycle",
+      "exitCode": 0,
+      "seconds": 82.09,
+      "source": "suite-support-chat-lifecycle.json"
+    },
+    "support-chat": {
+      "name": "support-chat",
+      "exitCode": 0,
+      "seconds": 183.12,
+      "source": "suite-all.json"
+    },
+    "visibility": {
+      "name": "visibility",
+      "exitCode": 0,
+      "seconds": 13.543,
+      "source": "suite-all.json"
+    }
+  }
+}

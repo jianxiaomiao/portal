@@ -1,0 +1,16 @@
+{
+  "browser": "158.0.8127.88",
+  "device": "iPhone 13 emulated touch input",
+  "reading": {
+    "scrollDelta": 106,
+    "cameraDelta": 0
+  },
+  "rotating": {
+    "scrollDelta": 0,
+    "cameraDelta": 6.90745470005783
+  },
+  "released": {
+    "scrollDelta": 105,
+    "cameraDelta": 0.004024188078947946
+  }
+}

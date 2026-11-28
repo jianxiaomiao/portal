@@ -1,0 +1,202 @@
+{
+  "model": "Xiaomi 14 / 23127PN0CC",
+  "android": "16",
+  "chrome": "150.0.7871.129",
+  "transport": "USB reverse",
+  "rows": {
+    "TLS": {
+      "ok": true,
+      "value": "HTTPS document loaded in actual Chrome over USB reverse. No system trust-store audit."
+    },
+    "home": {
+      "ok": true,
+      "value": {
+        "secure": true,
+        "crypto": true,
+        "width": 400,
+        "canvas": 0,
+        "glb": 0
+      }
+    },
+    "details": {
+      "ok": true,
+      "value": [
+        "Nexus · Developer API Platform",
+        "FlowOps · 企业多租户工单与知识协作平台",
+        "NewCrisp · 轻量级多租户 Web 在线客服服务台"
+      ]
+    },
+    "systemBack": {
+      "ok": true,
+      "value": "手机系统返回后，原标签恢复首页",
+      "initial": "Shell key injection denied; observed actual return on device."
+    },
+    "meshopt": {
+      "ok": true,
+      "value": {
+        "ms": 790,
+        "models": [
+          "/town-6c2fa5d037a0/Town.meshopt.glb"
+        ],
+        "quality": "auto",
+        "cache": "CDP disabled"
+      }
+    },
+    "raw": {
+      "ok": true,
+      "value": {
+        "ms": 819,
+        "models": [
+          "/town-6c2fa5d037a0/Town.glb"
+        ],
+        "quality": "auto",
+        "cache": "CDP disabled"
+      }
+    },
+    "controls": {
+      "ok": true,
+      "value": {
+        "reading": {
+          "scroll": 88.33333396911621,
+          "cam": 0,
+          "zoom": 0
+        },
+        "rotate": {
+          "scroll": 0,
+          "cam": 6.056857134679181,
+          "zoom": 0
+        },
+        "pinch": {
+          "scroll": 0,
+          "cam": 0.003856634769759396,
+          "zoom": 2.0083684495397356
+        },
+        "released": {
+          "scroll": 87.99999809265137,
+          "cam": 6.286925563218332e-05,
+          "zoom": 0
+        }
+      }
+    },
+    "orientation": {
+      "ok": true,
+      "value": {
+        "wide": [
+          845,
+          283
+        ],
+        "portrait": [
+          400,
+          773
+        ]
+      }
+    },
+    "qualityTheme": {
+      "ok": true,
+      "value": [
+        "low",
+        "night",
+        "day"
+      ]
+    },
+    "foreground": {
+      "ok": true,
+      "value": {
+        "states": [
+          "hidden",
+          "visible"
+        ],
+        "stage": "ready"
+      },
+      "initial": "Shell key injection denied; opened system HOME activity and restored Chrome."
+    },
+    "sustained": {
+      "ok": true,
+      "value": {
+        "elapsedMs": 60010,
+        "frames": 3610,
+        "rafFps": 60,
+        "p50ms": 16.600000000000364,
+        "p95ms": 16.700000000004366,
+        "losses": 0,
+        "stage": "ready",
+        "quality": "low"
+      }
+    },
+    "studio": {
+      "ok": true,
+      "value": "globe"
+    },
+    "api": {
+      "ok": true,
+      "value": "分步已推进"
+    },
+    "ticket": {
+      "ok": true,
+      "value": "分步已推进"
+    },
+    "chat": {
+      "ok": true,
+      "value": "分步已推进"
+    },
+    "failure": {
+      "ok": true,
+      "value": [
+        "/town-6c2fa5d037a0/Town.meshopt.glb",
+        "/town-6c2fa5d037a0/Town.glb"
+      ]
+    }
+  },
+  "failures": [],
+  "completed": true,
+  "pairedTrials": [
+    {
+      "model": "meshopt",
+      "ms": 870,
+      "files": [
+        "/town-6c2fa5d037a0/Town.meshopt.glb"
+      ]
+    },
+    {
+      "model": "raw",
+      "ms": 807,
+      "files": [
+        "/town-6c2fa5d037a0/Town.glb"
+      ]
+    },
+    {
+      "model": "meshopt",
+      "ms": 668,
+      "files": [
+        "/town-6c2fa5d037a0/Town.meshopt.glb"
+      ]
+    },
+    {
+      "model": "raw",
+      "ms": 826,
+      "files": [
+        "/town-6c2fa5d037a0/Town.glb"
+      ]
+    },
+    {
+      "model": "meshopt",
+      "ms": 707,
+      "files": [
+        "/town-6c2fa5d037a0/Town.meshopt.glb"
+      ]
+    },
+    {
+      "model": "raw",
+      "ms": 828,
+      "files": [
+        "/town-6c2fa5d037a0/Town.glb"
+      ]
+    }
+  ],
+  "sceneCounters": [
+    "帧率\n60 FPS\n绘制调用\n309\n提交三角面\n276,503\n渲染器纹理\n3\n实时阴影\n关闭\n像素比\n1\n首次可交互\n752 ms",
+    "帧率\n60 FPS\n绘制调用\n309\n提交三角面\n276,503\n渲染器纹理\n3\n实时阴影\n关闭\n像素比\n1\n首次可交互\n752 ms",
+    "帧率\n60 FPS\n绘制调用\n307\n提交三角面\n276,247\n渲染器纹理\n3\n实时阴影\n关闭\n像素比\n1\n首次可交互\n752 ms",
+    "帧率\n60 FPS\n绘制调用\n307\n提交三角面\n276,247\n渲染器纹理\n3\n实时阴影\n关闭\n像素比\n1\n首次可交互\n752 ms"
+  ]
+}

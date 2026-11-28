@@ -1,0 +1,10 @@
+{
+  "browser": "158.0.8127.88",
+  "requests": 55,
+  "chapters": {
+    "api": 20,
+    "ticket": 19,
+    "chat": 28
+  },
+  "unexpected": []
+}

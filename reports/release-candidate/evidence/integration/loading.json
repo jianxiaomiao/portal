@@ -1,0 +1,269 @@
+{
+  "browser": "158.0.8127.88",
+  "downMbit": 10,
+  "upMbit": 5,
+  "latencyMs": 80,
+  "samples": [
+    {
+      "round": 1,
+      "model": "meshopt",
+      "modelFile": "Town.meshopt.glb",
+      "bytes": 7591900,
+      "htmlMs": 119,
+      "firstContentfulPaintMs": 424,
+      "clickToReadyMs": 8992,
+      "downloadMs": 6317.899999999907,
+      "parseMs": 289.10000000009313,
+      "firstRenderMs": 925.6000000000931,
+      "phases": [
+        {
+          "name": "正在接收模型",
+          "ms": 1732
+        },
+        {
+          "name": "正在准备解码器",
+          "ms": 8091
+        },
+        {
+          "name": "正在解析场景",
+          "ms": 8219
+        },
+        {
+          "name": "正在准备首帧",
+          "ms": 8380
+        },
+        {
+          "name": "正在启用选取",
+          "ms": 9435
+        }
+      ],
+      "transfers": [
+        {
+          "file": "Town.meshopt.glb",
+          "encoded": 7591900,
+          "transfer": 7592200
+        },
+        {
+          "file": "meshopt_decoder.module-BkEQAzru.js",
+          "encoded": 22098,
+          "transfer": 22398
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "model": "raw",
+      "modelFile": "Town.glb",
+      "bytes": 13812376,
+      "htmlMs": 99.19999999995343,
+      "firstContentfulPaintMs": 268,
+      "clickToReadyMs": 13574.200000000186,
+      "downloadMs": 11271.59999999986,
+      "parseMs": 133.70000000018626,
+      "firstRenderMs": 695.0999999998603,
+      "phases": [
+        {
+          "name": "正在接收模型",
+          "ms": 1642
+        },
+        {
+          "name": "正在解析场景",
+          "ms": 13028
+        },
+        {
+          "name": "正在准备首帧",
+          "ms": 13100
+        },
+        {
+          "name": "正在启用选取",
+          "ms": 13895
+        }
+      ],
+      "transfers": [
+        {
+          "file": "Town.glb",
+          "encoded": 13812376,
+          "transfer": 13812676
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "model": "raw",
+      "modelFile": "Town.glb",
+      "bytes": 13812376,
+      "htmlMs": 96.30000000004657,
+      "firstContentfulPaintMs": 292,
+      "clickToReadyMs": 13212.300000000047,
+      "downloadMs": 11258.800000000047,
+      "parseMs": 84.80000000004657,
+      "firstRenderMs": 452.0999999998603,
+      "phases": [
+        {
+          "name": "正在接收模型",
+          "ms": 1656
+        },
+        {
+          "name": "正在解析场景",
+          "ms": 13011
+        },
+        {
+          "name": "正在准备首帧",
+          "ms": 13075
+        },
+        {
+          "name": "正在启用选取",
+          "ms": 13596
+        }
+      ],
+      "transfers": [
+        {
+          "file": "Town.glb",
+          "encoded": 13812376,
+          "transfer": 13812676
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "model": "meshopt",
+      "modelFile": "Town.meshopt.glb",
+      "bytes": 7591900,
+      "htmlMs": 100.10000000009313,
+      "firstContentfulPaintMs": 256,
+      "clickToReadyMs": 8516.5,
+      "downloadMs": 6334.59999999986,
+      "parseMs": 219,
+      "firstRenderMs": 520.8000000000466,
+      "phases": [
+        {
+          "name": "正在接收模型",
+          "ms": 1632
+        },
+        {
+          "name": "正在准备解码器",
+          "ms": 8008
+        },
+        {
+          "name": "正在解析场景",
+          "ms": 8128
+        },
+        {
+          "name": "正在准备首帧",
+          "ms": 8227
+        },
+        {
+          "name": "正在启用选取",
+          "ms": 8824
+        }
+      ],
+      "transfers": [
+        {
+          "file": "Town.meshopt.glb",
+          "encoded": 7591900,
+          "transfer": 7592200
+        },
+        {
+          "file": "meshopt_decoder.module-BkEQAzru.js",
+          "encoded": 22098,
+          "transfer": 22398
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "model": "meshopt",
+      "modelFile": "Town.meshopt.glb",
+      "bytes": 7591900,
+      "htmlMs": 96.69999999995343,
+      "firstContentfulPaintMs": 260,
+      "clickToReadyMs": 8475.899999999907,
+      "downloadMs": 6262.800000000047,
+      "parseMs": 224,
+      "firstRenderMs": 510.69999999995343,
+      "phases": [
+        {
+          "name": "正在接收模型",
+          "ms": 1639
+        },
+        {
+          "name": "正在准备解码器",
+          "ms": 7943
+        },
+        {
+          "name": "正在解析场景",
+          "ms": 8059
+        },
+        {
+          "name": "正在准备首帧",
+          "ms": 8168
+        },
+        {
+          "name": "正在启用选取",
+          "ms": 8781
+        }
+      ],
+      "transfers": [
+        {
+          "file": "Town.meshopt.glb",
+          "encoded": 7591900,
+          "transfer": 7592200
+        },
+        {
+          "file": "meshopt_decoder.module-BkEQAzru.js",
+          "encoded": 22098,
+          "transfer": 22398
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "model": "raw",
+      "modelFile": "Town.glb",
+      "bytes": 13812376,
+      "htmlMs": 96.30000000004657,
+      "firstContentfulPaintMs": 260,
+      "clickToReadyMs": 13465.199999999953,
+      "downloadMs": 11277.300000000047,
+      "parseMs": 196.69999999995343,
+      "firstRenderMs": 527,
+      "phases": [
+        {
+          "name": "正在接收模型",
+          "ms": 1627
+        },
+        {
+          "name": "正在解析场景",
+          "ms": 13007
+        },
+        {
+          "name": "正在准备首帧",
+          "ms": 13132
+        },
+        {
+          "name": "正在启用选取",
+          "ms": 13778
+        }
+      ],
+      "transfers": [
+        {
+          "file": "Town.glb",
+          "encoded": 13812376,
+          "transfer": 13812676
+        }
+      ]
+    }
+  ],
+  "medians": {
+    "raw": {
+      "minMs": 13212.300000000047,
+      "medianMs": 13465.199999999953,
+      "maxMs": 13574.200000000186
+    },
+    "meshopt": {
+      "minMs": 8475.899999999907,
+      "medianMs": 8516.5,
+      "maxMs": 8992
+    }
+  }
+}

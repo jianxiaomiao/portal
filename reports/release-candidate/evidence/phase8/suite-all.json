@@ -1,0 +1,51 @@
+{
+  "base": "/explore/",
+  "node": "v24.22.3",
+  "results": [
+    {
+      "name": "support-chat-state",
+      "exitCode": 0,
+      "seconds": 0.475
+    },
+    {
+      "name": "phase8-entry",
+      "exitCode": 0,
+      "seconds": 13.584
+    },
+    {
+      "name": "render-contracts",
+      "exitCode": 0,
+      "seconds": 33.526
+    },
+    {
+      "name": "town-views",
+      "exitCode": 0,
+      "seconds": 40.157
+    },
+    {
+      "name": "api-request",
+      "exitCode": 0,
+      "seconds": 73.931
+    },
+    {
+      "name": "journey-branches",
+      "exitCode": 0,
+      "seconds": 39.912
+    },
+    {
+      "name": "support-chat-lifecycle",
+      "exitCode": 0,
+      "seconds": 91.903
+    },
+    {
+      "name": "support-chat",
+      "exitCode": 0,
+      "seconds": 183.502
+    },
+    {
+      "name": "visibility",
+      "exitCode": 0,
+      "seconds": 12.168
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "run": "https://github.com/jianxiaomiao/portal/actions/runs/45959772344",
+  "head": "1807fc1ec2ab362755d7206eb04bb0d2edbf2017",
+  "jobs": [
+    {
+      "name": "build",
+      "conclusion": "success",
+      "steps": [
+        [
+          "Set up job",
+          "success"
+        ],
+        [
+          "Run actions/checkout@v4",
+          "success"
+        ],
+        [
+          "Run actions/setup-node@v4",
+          "success"
+        ],
+        [
+          "Run npm ci",
+          "success"
+        ],
+        [
+          "Run npm run build",
+          "success"
+        ],
+        [
+          "Upload Pages artifact",
+          "success"
+        ],
+        [
+          "Post Run actions/setup-node@v4",
+          "success"
+        ],
+        [
+          "Post Run actions/checkout@v4",
+          "success"
+        ],
+        [
+          "Complete job",
+          "success"
+        ]
+      ]
+    },
+    {
+      "name": "deploy",
+      "conclusion": "failure",
+      "steps": [
+        [
+          "Set up job",
+          "success"
+        ],
+        [
+          "Run actions/deploy-pages@v4",
+          "failure"
+        ],
+        [
+          "Complete job",
+          "success"
+        ]
+      ]
+    }
+  ]
+}

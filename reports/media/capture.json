@@ -1,0 +1,192 @@
+{
+  "browser": "158.0.8127.88",
+  "base": "/",
+  "screenshots": [
+    {
+      "name": "home-desktop.png",
+      "title": "简小淼 · 软件作品与 Codeville 小镇",
+      "path": "/",
+      "width": 1440,
+      "height": 900,
+      "bytes": 442730
+    },
+    {
+      "name": "home-desktop-full.png",
+      "title": "简小淼 · 软件作品与 Codeville 小镇",
+      "path": "/",
+      "width": 1440,
+      "height": 2337,
+      "bytes": 1275089
+    },
+    {
+      "name": "projects-nexus.png",
+      "title": "Nexus · Developer API Platform",
+      "path": "/projects/nexus/",
+      "width": 1440,
+      "height": 1242,
+      "bytes": 424713
+    },
+    {
+      "name": "projects-flowops.png",
+      "title": "FlowOps · 企业多租户工单与知识协作平台",
+      "path": "/projects/flowops/",
+      "width": 1440,
+      "height": 1242,
+      "bytes": 456510
+    },
+    {
+      "name": "projects-newcrisp.png",
+      "title": "NewCrisp · 轻量级多租户 Web 在线客服服务台",
+      "path": "/projects/newcrisp/",
+      "width": 1440,
+      "height": 1242,
+      "bytes": 467431
+    },
+    {
+      "name": "systems.png",
+      "title": "Systems Lab · 系统实验室",
+      "path": "/systems/",
+      "width": 1440,
+      "height": 1516,
+      "bytes": 907195
+    },
+    {
+      "name": "studio.png",
+      "title": "Studio · 个人工作室",
+      "path": "/studio/",
+      "width": 1440,
+      "height": 1174,
+      "bytes": 369798
+    },
+    {
+      "name": "creative.png",
+      "title": "Creative Lab · 创意收藏",
+      "path": "/creative/",
+      "width": 1440,
+      "height": 1237,
+      "bytes": 559014
+    },
+    {
+      "name": "home-mobile-full.png",
+      "title": "简小淼 · 软件作品与 Codeville 小镇",
+      "path": "/",
+      "width": 390,
+      "height": 3134,
+      "bytes": 630656
+    },
+    {
+      "name": "explore.png",
+      "title": "探索 Codeville 小镇",
+      "path": "/explore/",
+      "width": 1440,
+      "height": 900,
+      "bytes": 457959
+    },
+    {
+      "name": "chapter-api.png",
+      "title": "探索 Codeville 小镇",
+      "path": "/explore/",
+      "width": 1440,
+      "height": 900,
+      "bytes": 461873,
+      "detail": "在请求线程计算 SHA256"
+    },
+    {
+      "name": "chapter-ticket.png",
+      "title": "探索 Codeville 小镇",
+      "path": "/explore/",
+      "width": 1440,
+      "height": 900,
+      "bytes": 556820,
+      "detail": "FlowOps 提交成功"
+    },
+    {
+      "name": "chapter-chat.png",
+      "title": "探索 Codeville 小镇",
+      "path": "/explore/",
+      "width": 1440,
+      "height": 900,
+      "bytes": 521135,
+      "detail": "客户窗口出现回复"
+    },
+    {
+      "name": "home-preview.png",
+      "title": "简小淼 · 软件作品与 Codeville 小镇",
+      "path": "/",
+      "width": 1440,
+      "height": 900,
+      "bytes": 358783,
+      "detail": "主动启用后的实时全镇总览"
+    }
+  ],
+  "videos": [
+    {
+      "name": "home-preview-explore.webm",
+      "bytes": 1078599,
+      "duration": 8.12,
+      "width": 1440,
+      "height": 900,
+      "samples": [
+        {
+          "seconds": 1.3,
+          "colors": 691,
+          "hash": 3508538289
+        },
+        {
+          "seconds": 4.06,
+          "colors": 749,
+          "hash": 4096810335
+        },
+        {
+          "seconds": 6.98,
+          "colors": 1159,
+          "hash": 3335072156
+        }
+      ]
+    },
+    {
+      "name": "deep-links.webm",
+      "bytes": 2767788,
+      "duration": 20.36,
+      "width": 1440,
+      "height": 900,
+      "samples": [
+        {
+          "seconds": 3.26,
+          "colors": 1309,
+          "hash": 2432340520
+        },
+        {
+          "seconds": 10.18,
+          "colors": 822,
+          "hash": 3752857909
+        },
+        {
+          "seconds": 17.51,
+          "colors": 1177,
+          "hash": 3289224729
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "preview": {
+    "canvas": {
+      "x": 572.5625,
+      "y": 103,
+      "width": 802.625,
+      "height": 552.015625
+    },
+    "host": {
+      "x": 572.5625,
+      "y": 103,
+      "width": 802.625,
+      "height": 552.015625
+    },
+    "originalPoster": [
+      1800,
+      1238
+    ]
+  },
+  "passed": true
+}
